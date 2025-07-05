@@ -19,12 +19,24 @@ header {
   background-color: #004080;
   color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+}
+
+header .logo {
+  position: absolute;
+  left: 20px;
+  font-size: 16px;
+}
+
+header .title {
+  font-size: 28px;
 }
 
 .tabs-container {
@@ -34,15 +46,13 @@ header {
   right: 0;
   background-color: #f9f9f9;
   z-index: 999;
-  padding-top: 10px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .sidebar-toggle {
-  display: block;
-  position: fixed;
-  top: 90px;
-  left: 10px;
-  z-index: 1002;
   background: #004080;
   color: #fff;
   border: none;
@@ -71,8 +81,8 @@ header {
 
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 55px 0 0 20px;
   border-bottom: 2px solid #ccc;
 }
 
@@ -81,7 +91,7 @@ header {
   border: 1px solid #ccc;
   border-bottom: none;
   border-radius: 6px 6px 0 0;
-  padding: 10px 16px;
+  padding: 6px 12px;
   margin: 0 4px;
   font-weight: bold;
   color: #004080;
@@ -103,7 +113,7 @@ header {
 
 .tabcontent {
   display: none;
-  padding: 200px 20px 30px;
+  padding: 200px 40px 30px;
   width: 100%;
   margin: auto;
 }
@@ -319,38 +329,8 @@ iframe {
   .caption, p {
     font-size: 14px;
   }
-  .tab {
-      overflow-x: auto;
-      white-space: nowrap;
-      display: flex;
-      flex-wrap: nowrap;
-    }
-
-  .tab button {
-    flex: 0 0 auto;
-    font-size: 14px;
-    padding: 8px 12px;
+  .tabs {
+    padding-top: 0;
   }
-    .tabs-container {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
-      }
-
-      .tabs {
-        display: inline-flex;
-        flex-wrap: nowrap;
-        padding: 10px;
-        overflow-x: auto;
-        width: max-content;
-      }
-
-      .tablink {
-        flex: 0 0 auto;
-        font-size: 14px;
-        padding: 8px 12px;
-        margin-right: 6px;
-        white-space: nowrap;
-      }
 }
 
