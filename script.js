@@ -36,17 +36,16 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
   data.forEach(item => {
     sidebar.innerHTML += `<a href="#${item.id}">${item.title}</a>`;
 
-    const imgs = Array.isArray(item.img)
-  ? item.img.map((src, i) => `<img class="thumbnail${i ? '' : ' selected'}" src="${src}" />`).join('')
-  : '';
+      const imgs = Array.isArray(item.img)
+      ? item.img.map((src, i) => `<img class="thumbnail${i ? '' : ' selected'}" src="${src}" alt="${item.title} thumbnail ${i + 1}" />`).join('')
+      : '';
     const video = item.videoID ? `<div class="video-container"><iframe id="yt-player-${item.id}" src="https://www.youtube.com/embed/${item.videoID}?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
      </div>`
       : '';
-console.log('videoID:', item.videoID);
 
     content.innerHTML += `<div id="${item.id}" class="performance-item">
       <h2>${item.title}</h2>
-      ${imgs ? `<img class="main-image" src="${item.img[0]}" />` : ''}
+      ${imgs ? `<img class="main-image" src="${item.img[0]}" alt="${item.title}" />` : ''}
       ${imgs ? `<div class="thumbnail-row">${imgs}</div>` : ''}
       ${video}
       <p>${convertTimeToSpan(item.text)}</p>
@@ -77,7 +76,6 @@ const ytPlayers = {};
 window.onYouTubeIframeAPIReady = () => {
   document.querySelectorAll('iframe[id^="yt-player-"]').forEach(iframe => {
     const id = iframe.id;
-    console.log("iframe.id= "+id);
     ytPlayers[id] = new YT.Player(id, {
       events: { 'onReady': () => attachTimeJumpListeners(id) }
     });
