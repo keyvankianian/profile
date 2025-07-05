@@ -21,8 +21,11 @@
 <div class="tabs-container">
     <button class="sidebar-toggle" type="button">☰ All List</button>
     <div class="tabs">
-        <button class="tablink active" data-tab="interviews" onclick="openTab('interviews', this)">
-            Intervjuer
+        <button class="tablink active" data-tab="artiklar" onclick="openTab('artiklar', this)">
+            Artiklar
+        </button>
+        <button class="tablink" data-tab="bilder" onclick="openTab('bilder', this)">
+            Bilder
         </button>
         <button class="tablink" data-tab="performances" onclick="openTab('performances', this)">
             Konstnärliga Framträdanden
@@ -38,7 +41,13 @@
         </button>
     </div>
 </div>
-    <div class="tabcontent active" id="interviews">
+    <div class="tabcontent active" id="artiklar">
+        <div class="tab-inner">
+            <aside class="sidebar"></aside>
+            <main class="content"></main>
+        </div>
+    </div>
+    <div class="tabcontent" id="bilder">
         <div class="tab-inner">
             <aside class="sidebar"></aside>
             <main class="content"></main>
