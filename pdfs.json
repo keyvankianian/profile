@@ -1,0 +1,44 @@
+[
+  {
+    "id": "Kiarash Houshmand",
+    "title": "Årsrapport 2023 – Yarsan Kulturcenter",
+    "pdf": "./pdfs/KiarashHoushmand.pdf",
+    "caption": "En detaljerad rapport över verksamheten under året 2023."
+  },
+  {
+    "id": "Karl Mattias Bergsten",
+    "title": "Manifest för konstnärlig frihet",
+    "pdf": "./pdfs/KarlMattiasBergsten.pdf",
+    "caption": "Ett dokument som beskriver vår syn på frihet och exilens roll."
+  },
+  {
+    "id": "KARAVAN MUSIKFÖRENING",
+    "title": "KARAVAN_MUSIKFÖRENING",
+    "pdf": "./pdfs/KARAVAN_MUSIKFÖRENING.pdf",
+    "caption": "Ett dokument som beskriver vår syn på frihet och exilens roll."
+  },
+  {
+    "id": "Föreningen_Hoo_Mat",
+    "title": "Föreningen Hoo Mat",
+    "pdf": "./pdfs/Föreningen_Hoo_Mat.pdf",
+    "caption": "Ett dokument som beskriver vår syn på frihet och exilens roll."
+  },
+  {
+    "id": "alireza_mojallal",
+    "title": "alireza mojallal",
+    "pdf": "./pdfs/alireza_mojallal.pdf",
+    "caption": "Ett dokument som beskriver vår syn på frihet och exilens roll."
+  },
+  {
+    "id": "EnamKarami",
+    "title": "Enam Karami",
+    "pdf": "./pdfs/EnamKarami.pdf",
+    "caption": "Ett dokument som beskriver vår syn på frihet och exilens roll."
+  },
+  {
+    "id": "YaresanCulturalInstitute",
+    "title": "Yaresan Cultural Institute",
+    "pdf": "./pdfs/YaresanCulturalInstitute.pdf",
+    "caption": "Ett dokument som beskriver vår syn på frihet och exilens roll."
+  }
+]
