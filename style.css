@@ -269,4 +269,16 @@ iframe {
   .caption, p {
     font-size: 14px;
   }
+  .tab {
+      overflow-x: auto;
+      white-space: nowrap;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .tab button {
+      flex: 0 0 auto;
+      font-size: 14px;
+      padding: 8px 12px;
+    }
 }
