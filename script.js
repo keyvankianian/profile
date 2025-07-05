@@ -10,15 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
 tag.src = "https://www.youtube.com/iframe_api";
 document.body.appendChild(tag);
 
-  document.querySelectorAll('.sidebar-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const sidebar = btn.parentElement.querySelector('.sidebar');
-      if (sidebar) {
-        sidebar.classList.add('open');
-        document.querySelector('.overlay').classList.add('show');
-        document.body.classList.add('sidebar-open');
-      }
-    });
+  const sidebarToggle = document.querySelector('.sidebar-toggle');
+  sidebarToggle.addEventListener('click', () => {
+    const activeTab = document.querySelector('.tabcontent.active');
+    const sidebar = activeTab?.querySelector('.sidebar');
+    if (sidebar) {
+      sidebar.classList.add('open');
+      document.querySelector('.overlay').classList.add('show');
+      document.body.classList.add('sidebar-open');
+      sidebarToggle.style.display = 'none';
+    }
   });
   document.querySelector('.overlay').addEventListener('click', closeSidebar);
 
@@ -134,6 +135,7 @@ const closeSidebar = () => {
   document.querySelectorAll('.sidebar').forEach(sb => sb.classList.remove('open'));
   document.querySelector('.overlay').classList.remove('show');
   document.body.classList.remove('sidebar-open');
+  document.querySelector('.sidebar-toggle').style.display = '';
 };
 
 
