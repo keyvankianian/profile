@@ -66,7 +66,6 @@
       "url": "https://www.yarsanf.org/index/2016/08/25/%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%DB%8C%DA%A9-%D8%AA%DB%8C%D9%85-%D8%AF%D9%88-%D9%86%D9%81%D8%B1%D9%87-%D8%A7%D8%B2-%D9%87%DB%8C%D8%A6%D8%AA-%D9%85%D8%AF%DB%8C%D8%B1%D9%87-%D9%81%D8%AF%D8%B1%D8%A7/"
     }
   },
-
   {
     "id": "radio2011",
     "title": "Radio Sverige 2011",
@@ -93,6 +92,55 @@
     "source": {
       "label": "www.farhang.nu",
       "url": "https://www.farhang.nu/balvashan-ensemble-i-samarbete-med-yarsan-forbundet/"
+    }
+  },
+  {
+    "id": "gisso2019",
+    "title": "Folk och klasisk kurdisk och persisk musik 2019",
+    "img": [
+      "./picture/uppsala_2019.jpg"
+    ],
+    "video": null,
+    "poster": null,
+    "text": "Denna video visar den historiska konserten 'Shkobān' i Stockholm, i Eric Ericsonhallen. Denna föreställning var en del av vår Europaturné som hölls i Nederländerna, Belgien, Tyskland, Sverige, Finland och Norge. I denna konsert framfördes stycken till minne av Jina och med slagordet 'Kvinna, Liv, Frihet' – ett konstnärligt och protesterande budskap till stöd för kvinnors frihet och rättvisa. Med full medvetenhet om de risker denna föreställning innebar för mig, valde jag modigt att vara en röst för de kvinnor som är berövade sin frihet och rätt att sjunga i sitt hemland. Denna konsert var inte bara en musikföreställning, utan en ståndpunkt mot förtryck och en kamp för att bevara identitet och frihet",
+    "source": null
+  },
+  {
+    "id": "goteborg2019",
+    "title": "Inbjudan till Göteborgs Internationella Festival – 1 april 2019",
+    "img": [
+      "./picture/göteborg_2019.jpg"
+    ],
+    "video": null,
+    "poster": null,
+    "text": "Den 1 april 2019 blev jag inbjuden till Göteborgs Internationella Festival som en framstående iransk artist. Vid detta evenemang framfördes nationell iransk musik och verk kopplade till Yarsantraditionen, vilket återspeglade kulturell identitet, andligt arv och konstnärligt motstånd mot de restriktioner som påtvingas musik i Iran. Denna konsert var en del av en långsiktig strävan att bevara och sprida Irans traditionella och andliga musik internationellt samt att försvara konstnärlig frihet och rätten att framföra musik, särskilt för artister som lever under förtryck i Iran.",
+    "source": {
+      "label": "INSTAGRAM",
+      "url": "https://www.instagram.com/p/Bvrw5CIgnz0/?igsh=MXViY2FyMW44ZWNleg%3D%3D"
+    }
+  },
+  {
+    "id": "balvashan2016",
+    "title": "Balvashan Ensemble Concert – Uppsala 2016",
+    "img": [
+      "./picture/uppsala_2016.jpg"
+    ],
+    "video": null,
+    "poster": null,
+    "text": "Denna konsert hölls under ledning av Keyvan Kianian och framförde traditionell persisk och kurdisk musik. Närvaron av en kvinnlig sångare (Malihe Moradi) i detta framträdande, vilket är förbjudet i Iran, visar stöd för kvinnors frihet inom musiken. Att organisera sådana konserter med kvinnliga sångare innebär allvarliga rättsliga restriktioner och säkerhetsrisker i Iran.",
+    "source": null
+  },
+  {
+    "id": "sverigesRadio2023",
+    "title": "Sveriges Radio i Stockholm-2023",
+    "img": [
+      "./picture/SR_2023_1.jpg",
+      "./picture/SR_2023_2.jpg"
+    ],
+    "text": "Intervju med Sveriges Radio i Stockholm och samtal om framförandet av sången Shkobân till minne av Jina och revolutionen 'Kvinna, Liv, Frihet'. Denna konsert hölls tillägnad kvinnors frihet under en Europaturné och mottogs med stor entusiasm i Nederländerna, Belgien, Tyskland, Sverige, Norge och Finland.Datum för intervjun: Torsdag 6 april 2023, kl. 17:50.",
+    "source": {
+      "label": "www.sverigesradio.se",
+      "url": "https://www.sverigesradio.se/artikel/%D9%87%D9%88%D9%86%DB%95%D8%B1%D9%85%DB%95%D9%86%D8%AF-%D8%AD%D9%88%D8%B3%DB%8E%D9%86-%D8%B3%DB%95%D9%81%D8%A7%D9%85%DB%95%D9%86%D8%B4-%D8%A8%DB%86-%DB%8C%DB%95%DA%A9%DB%95%D9%85%D8%AC%D8%A7%D8%B1-%D9%84%DB%95-%D8%B3%D9%88%DB%8C%D8%AF-%DA%A9%DB%86%D9%86%D8%B3%DB%8E%D8%B1%D8%AA-%D8%AF%DB%95%DA%AF%DB%8E%D8%B1%DB%8E%D8%AA"
     }
   }
 ]

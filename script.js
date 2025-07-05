@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const tabs = ['artiklar','bilder', 'performances', 'efter2023', 'important'];
+  const tabs = ['artiklar','bilder', 'efter2023', 'important'];
   const activeTab = localStorage.getItem('activeTab') || 'important';
 
   document.querySelector(`.tablink[data-tab="${activeTab}"]`)?.click();
