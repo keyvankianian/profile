@@ -11,6 +11,10 @@ body {
   line-height: 1.8;
 }
 
+body.sidebar-open {
+  overflow: hidden;
+}
+
 header {
   background-color: #004080;
   color: white;
@@ -31,6 +35,15 @@ header {
   background-color: #f9f9f9;
   z-index: 999;
   padding-top: 10px;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+.overlay {
+  display: none;
+  pointer-events: none;
 }
 
 .tabs {
@@ -276,9 +289,61 @@ iframe {
       flex-wrap: nowrap;
     }
 
-    .tab button {
-      flex: 0 0 auto;
-      font-size: 14px;
-      padding: 8px 12px;
-    }
+  .tab button {
+    flex: 0 0 auto;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 90px;
+    left: 10px;
+    z-index: 1002;
+    background: #004080;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    max-width: 80%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+    pointer-events: none;
+  }
+
+  .overlay.show {
+    display: block;
+    pointer-events: auto;
+  }
 }

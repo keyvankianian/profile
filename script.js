@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
 tag.src = "https://www.youtube.com/iframe_api";
 document.body.appendChild(tag);
 
+  document.querySelectorAll('.sidebar-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sidebar = btn.parentElement.querySelector('.sidebar');
+      if (sidebar) {
+        sidebar.classList.add('open');
+        document.querySelector('.overlay').classList.add('show');
+        document.body.classList.add('sidebar-open');
+      }
+    });
+  });
+  document.querySelector('.overlay').addEventListener('click', closeSidebar);
+
 });
 
 const renderTabFromJson = async (tabId, jsonUrl) => {
@@ -43,6 +55,7 @@ console.log('videoID:', item.videoID);
   });
 
   setupScrollSpy(tabId);
+  setupSidebarLinks(tabId);
 };
 
 const convertTimeToSpan = text => text.replace(/(\d{1,2}):(\d{2})/g, (_, m, s) => `<span class="time-jump" data-time="${+m * 60 + +s}">${m}:${s}</span>`);
@@ -108,6 +121,21 @@ const renderPdfTab = async (tabId, jsonUrl) => {
     sidebar.append(link);
     if (!i) link.click();
   });
+  setupSidebarLinks(tabId);
+};
+
+const setupSidebarLinks = (tabId) => {
+  const sidebar = document.querySelector(`#${tabId} .sidebar`);
+  if (!sidebar) return;
+  sidebar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+  });
+};
+
+const closeSidebar = () => {
+  document.querySelectorAll('.sidebar').forEach(sb => sb.classList.remove('open'));
+  document.querySelector('.overlay').classList.remove('show');
+  document.body.classList.remove('sidebar-open');
 };
 
 
