@@ -361,8 +361,11 @@ iframe {
 
   .video-thumb-row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 0.375rem;
+    margin-top: 0.625rem;
+    overflow-x: auto;
+    padding-bottom: 0.375rem;
+
   }
 
   .tablink {

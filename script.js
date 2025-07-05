@@ -65,7 +65,7 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
       ${imgs ? `<div class="thumbnail-row">${imgs}</div>` : ''}
       ${video}
       <p>${convertTimeToSpan(item.text)}</p>
-      ${item.source ? `<p><strong>Källa:</strong> <a href="${item.source.url}" target="_blank">${item.source.label}</a></p>` : ''}
+      ${item.source ? `<p><strong>Källa:</strong> <a href="${item.source.url}" target="_blank">${item.source.url}</a></p>` : ''}
     </div>`;
     attachTimeJumpListeners(item.id);
   });
