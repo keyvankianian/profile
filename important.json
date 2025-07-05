@@ -48,22 +48,23 @@
     "title": "Minne av Jina Stockholm 2",
     "img": null,
     "videoID": null,
+    "poster": "./video/minneAvJina_2.jpg",
     "video": "./video/minneAvJina_2.mp4",
     "text": "Detta musikstycke framfördes av mig och min musikgrupp under vår Europaturné, några månader efter Jina-revolutionen. Verket är baserat på en gammal och profetisk dikt av Shah Khoshin, en andlig ledare inom Yarsan-tron, och har återtolkats med tanke på dagens situation i Iran.  Texterna uttrycker tydligt folkets uppror, regimens förtryck, religiös diskriminering och hopp om frihet och rättvisa. Med denna musik har vi inte bara uttryckt vår kulturella och religiösa identitet, utan också gjort en tydlig politisk markering mot diktatur och religiös förföljelse.  Detta är både en andlig handling och en fredlig protest – ett sätt att stå upp för vår tro och visa stöd för det iranska folkets kamp. Att framföra en sådan musik i Iran innebär stora risker, och vi skulle vara i allvarlig fara om vi återvände.  Video av framförandet och andra bevis finns tillgängliga vid behov.",
     "source": {
-      "label": "Nothing",
-      "url": ""
+      "label": "Youtube",
+      "url": "https://www.youtube.com/watch?si=Sy3X3hQVJRQMma3K&v=6QtDSED0WiU&feature=youtu.be"
     }
   },
   {
     "id": "minneAvJina_3",
     "title": "Minne av Jina Stockholm 3",
     "img": null,
-    "videoID": null,
+    "videoID": "RoOkCYRqQP4",
     "text": "Detta musikstycke framfördes av mig och min musikgrupp under vår Europaturné, några månader efter Jina-revolutionen. Verket är baserat på en gammal och profetisk dikt av Shah Khoshin, en andlig ledare inom Yarsan-tron, och har återtolkats med tanke på dagens situation i Iran.  Texterna uttrycker tydligt folkets uppror, regimens förtryck, religiös diskriminering och hopp om frihet och rättvisa. Med denna musik har vi inte bara uttryckt vår kulturella och religiösa identitet, utan också gjort en tydlig politisk markering mot diktatur och religiös förföljelse.  Detta är både en andlig handling och en fredlig protest – ett sätt att stå upp för vår tro och visa stöd för det iranska folkets kamp. Att framföra en sådan musik i Iran innebär stora risker, och vi skulle vara i allvarlig fara om vi återvände.  Video av framförandet och andra bevis finns tillgängliga vid behov.",
     "source": {
-      "label": "Nothing",
-      "url": ""
+      "label": "Youtube",
+      "url": "https://www.youtube.com/watch?v=RoOkCYRqQP4"
     }
   },
   {
