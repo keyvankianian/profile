@@ -136,6 +136,7 @@ header .title {
 
 .tab-inner {
   display: flex;
+  width: 100%
   flex-direction: row;
   align-items: flex-start;
   gap: 2.5rem;
@@ -170,6 +171,9 @@ header .title {
 @media (max-width: 768px) {
   .sidebar {
     width: 80vw;
+  }
+  .tabcontent {
+    padding: 20vh 2rem 1.875rem 2rem ;
   }
 }
 
@@ -264,7 +268,7 @@ iframe {
 }
 
 .pdf-frame {
-  width: 100%;
+  width: 100rem;
   max-width: 100%;
   height: 100vh;
   border: none;
