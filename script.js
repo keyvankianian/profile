@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = ['interviews', 'performances', 'efter2023', 'important'];
   const activeTab = localStorage.getItem('activeTab') || 'important';
-  
+
   document.querySelector(`.tablink[data-tab="${activeTab}"]`)?.click();
-  
+
   tabs.forEach(tab => renderTabFromJson(tab, `${tab}.json`));
   renderPdfTab('pdfs', 'pdfs.json');
   const tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-document.body.appendChild(tag);
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.body.appendChild(tag);
 
   const sidebarToggle = document.querySelector('.sidebar-toggle');
   sidebarToggle.addEventListener('click', () => {
@@ -37,12 +37,19 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
   data.forEach(item => {
     sidebar.innerHTML += `<a href="#${item.id}">${item.title}</a>`;
 
-      const imgs = Array.isArray(item.img)
+    const imgs = Array.isArray(item.img)
       ? item.img.map((src, i) => `<img class="thumbnail${i ? '' : ' selected'}" src="${src}" alt="${item.title} thumbnail ${i + 1}" />`).join('')
       : '';
-    const video = item.videoID ? `<div class="video-container"><iframe id="yt-player-${item.id}" src="https://www.youtube.com/embed/${item.videoID}?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-     </div>`
-      : '';
+    const video = item.video
+      ? `<div class="video-container">
+               <video id="local-${item.id}" class="video-frame" controls ${item.poster ? `poster="${item.poster}"` : ''}>
+                   <source src="${item.video}" type="video/mp4">
+               </video>
+             </div>`
+      : item.videoID
+        ? `<div class="video-container"><iframe id="yt-player-${item.id}" src="https://www.youtube.com/embed/${item.videoID}?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>`
+        : '';
+
 
     content.innerHTML += `<div id="${item.id}" class="performance-item">
       <h2>${item.title}</h2>
@@ -52,6 +59,7 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
       <p>${convertTimeToSpan(item.text)}</p>
       ${item.source ? `<p><strong>Källa:</strong> <a href="${item.source.url}" target="_blank">${item.source.label}</a></p>` : ''}
     </div>`;
+    attachTimeJumpListeners(item.id);
   });
 
   setupScrollSpy(tabId);
@@ -78,25 +86,31 @@ const ytPlayers = {};
 window.onYouTubeIframeAPIReady = () => {
   document.querySelectorAll('iframe[id^="yt-player-"]').forEach(iframe => {
     const id = iframe.id;
+    const itemId = id.replace('yt-player-', '');
     ytPlayers[id] = new YT.Player(id, {
-      events: { 'onReady': () => attachTimeJumpListeners(id) }
+      events: { 'onReady': () => attachTimeJumpListeners(itemId) }
     });
   });
 };
 
-const attachTimeJumpListeners = (ytIframeId) => {
-  const itemId = ytIframeId.replace('yt-player-', '');
+const attachTimeJumpListeners = (itemId) => {
   const container = document.getElementById(itemId);
   if (!container) return;
 
   container.querySelectorAll('.time-jump').forEach(el => {
     el.onclick = () => {
       const seconds = parseInt(el.dataset.time, 10);
-      const ytPlayer = ytPlayers[ytIframeId];
+      const ytPlayer = ytPlayers[`yt-player-${itemId}`];
       if (ytPlayer && typeof ytPlayer.seekTo === 'function') {
-          ytPlayer.seekTo(seconds, true);
-          ytPlayer.playVideo();
+        ytPlayer.seekTo(seconds, true);
+        ytPlayer.playVideo();
+      } else {
+        const video = document.getElementById(`local-${itemId}`);
+        if (video) {
+          video.currentTime = seconds;
+          video.play();
         }
+      }
     };
   });
 };

@@ -2,21 +2,19 @@
   {
     "id": "eurokurd2024",
     "title": "Euro kurd 2024",
-    "img": [],
-    "video": "./video/EuroKurd.mp4",
-    "poster": "./video/EuroKurd.jpg",
+    "img": null,
+    "videoID": "q999bCIQ_3E",
     "text": "Samarbete mellan Balushan-gruppen, som jag själv leder, och Yarsan.",
     "source": {
       "label": "Youtube",
-      "url": "https://www.youtube.com/watch?v=q999bCIQ_3E&ab_channel=eurokurd%DB%8C%D9%88%D8%B1%DB%86%DA%A9%D9%88%D8%B1%D8%AF"
+      "url": "https://www.youtube.com/watch?v=q999bCIQ_3E"
     }
   },
   {
     "id": "huddinge2023",
     "title": "Huddinge festival 2023",
-    "img": [],
-    "video": "./video/huddinge_2023.mp4",
-    "poster": null,
+    "img": null,
+    "videoID": "",
     "text": "Det här videoklippet är från min framträdande på Huddinge folkfestival i Sverige. Uppträdandet skedde på inbjudan av festivalarrangörerna och är en del av mina konstnärliga och kulturella aktiviteter till stöd för iransk musik, Yarsan-musik och invandrargruppen. Som musiker och ledare för musikgruppen Yaran framförde jag stycken med sociala, kulturella och rituella teman",
     "source": {
       "label": "INSTAGRAM",
