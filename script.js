@@ -56,6 +56,7 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
 
   setupScrollSpy(tabId);
   setupSidebarLinks(tabId);
+  setupThumbnailClicks(tabId);
 };
 
 const convertTimeToSpan = text => text.replace(/(\d{1,2}):(\d{2})/g, (_, m, s) => `<span class="time-jump" data-time="${+m * 60 + +s}">${m}:${s}</span>`);
@@ -138,5 +139,18 @@ const closeSidebar = () => {
   document.querySelector('.sidebar-toggle').style.display = '';
 };
 
+const setupThumbnailClicks = (tabId) => {
+  document.querySelectorAll(`#${tabId} .performance-item`).forEach(item => {
+    const mainImage = item.querySelector('.main-image');
+    if (!mainImage) return;
+    item.querySelectorAll('.thumbnail').forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        mainImage.src = thumbnail.src;
+        item.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('selected'));
+        thumbnail.classList.add('selected');
+      });
+    });
+  });
+};
 
 
