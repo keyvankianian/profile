@@ -16,6 +16,7 @@ document.body.appendChild(tag);
       if (sidebar) {
         sidebar.classList.add('open');
         document.querySelector('.overlay').classList.add('show');
+        document.body.classList.add('sidebar-open');
       }
     });
   });
@@ -134,6 +135,7 @@ const setupSidebarLinks = (tabId) => {
 const closeSidebar = () => {
   document.querySelectorAll('.sidebar').forEach(sb => sb.classList.remove('open'));
   document.querySelector('.overlay').classList.remove('show');
+  document.body.classList.remove('sidebar-open');
 };
 
 

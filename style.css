@@ -11,6 +11,10 @@ body {
   line-height: 1.8;
 }
 
+body.sidebar-open {
+  overflow: hidden;
+}
+
 header {
   background-color: #004080;
   color: white;
@@ -39,6 +43,7 @@ header {
 
 .overlay {
   display: none;
+  pointer-events: none;
 }
 
 .tabs {
@@ -317,6 +322,8 @@ iframe {
     transition: transform 0.3s ease;
     z-index: 1001;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
   .sidebar.open {
@@ -332,9 +339,11 @@ iframe {
     background: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 1000;
+    pointer-events: none;
   }
 
   .overlay.show {
     display: block;
+    pointer-events: auto;
   }
 }
