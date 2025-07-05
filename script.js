@@ -40,15 +40,23 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
     const imgs = Array.isArray(item.img)
       ? item.img.map((src, i) => `<img class="thumbnail${i ? '' : ' selected'}" src="${src}" alt="${item.title} thumbnail ${i + 1}" />`).join('')
       : '';
-    const video = item.video
-      ? `<div class="video-container">
-               <video id="local-${item.id}" class="video-frame" controls ${item.poster ? `poster="${item.poster}"` : ''}>
-                   <source src="${item.video}" type="video/mp4">
-               </video>
-             </div>`
-      : item.videoID
-        ? `<div class="video-container"><iframe id="yt-player-${item.id}" src="https://www.youtube.com/embed/${item.videoID}?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>`
-        : '';
+        let video = '';
+        if (Array.isArray(item.video)) {
+          const mainSrc = item.video[0];
+          const thumbs = item.video.slice(1).map((src, i) =>
+            `<video class="video-thumb${!i ? ' selected' : ''}" src="${src}" preload="metadata" muted></video>`
+          ).join('');
+          const thumbRow = thumbs ? `<div class="video-thumb-row">${thumbs}</div>` : '';
+          video = `<div class="video-container">
+                    <video id="local-${item.id}" class="video-frame" controls ${item.poster ? `poster="${item.poster}"` : ''} src="${mainSrc}"></video>
+                  </div>${thumbRow}`;
+        } else if (item.video) {
+          video = `<div class="video-container">
+                    <video id="local-${item.id}" class="video-frame" controls ${item.poster ? `poster="${item.poster}"` : ''} src="${item.video}"></video>
+                  </div>`;
+        } else if (item.videoID) {
+          video = `<div class="video-container"><iframe id="yt-player-${item.id}" src="https://www.youtube.com/embed/${item.videoID}?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>`;
+        }
 
 
     content.innerHTML += `<div id="${item.id}" class="performance-item">
@@ -65,6 +73,7 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
   setupScrollSpy(tabId);
   setupSidebarLinks(tabId);
   setupThumbnailClicks(tabId);
+  setupVideoThumbnailClicks(tabId);
 };
 
 const convertTimeToSpan = text => text.replace(/(\d{1,2}):(\d{2})/g, (_, m, s) => `<span class="time-jump" data-time="${+m * 60 + +s}">${m}:${s}</span>`);
@@ -105,7 +114,7 @@ const attachTimeJumpListeners = (itemId) => {
         ytPlayer.seekTo(seconds, true);
         ytPlayer.playVideo();
       } else {
-        const video = document.getElementById(`local-${itemId}`);
+        const video = container.querySelector('.video-frame');
         if (video) {
           video.currentTime = seconds;
           video.play();
@@ -167,4 +176,20 @@ const setupThumbnailClicks = (tabId) => {
   });
 };
 
+const setupVideoThumbnailClicks = (tabId) => {
+  document.querySelectorAll(`#${tabId} .performance-item`).forEach(item => {
+    const mainVideo = item.querySelector('.video-frame');
+    if (!mainVideo) return;
+    item.querySelectorAll('.video-thumb').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        if (mainVideo.src !== thumb.src) {
+          mainVideo.src = thumb.src;
+          mainVideo.load();
+        }
+        item.querySelectorAll('.video-thumb').forEach(t => t.classList.remove('selected'));
+        thumb.classList.add('selected');
+      });
+    });
+  });
+};
 

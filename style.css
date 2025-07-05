@@ -232,6 +232,32 @@ iframe {
   border: 0.125rem solid transparent;
 }
 
+.video-thumb-row {
+  display: flex;
+  gap: 0.375rem;
+  margin-top: 0.625rem;
+  overflow-x: auto;
+  padding-bottom: 0.375rem;
+}
+
+.video-thumb {
+  width: 5rem;
+  height: 3.75rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 0.125rem solid transparent;
+}
+
+.video-thumb:hover {
+  transform: scale(1.05);
+}
+
+.video-thumb.selected {
+  border: 0.125rem solid #004080;
+}
+
 .thumbnail:hover {
   transform: scale(1.05);
 }
@@ -283,7 +309,7 @@ iframe {
 
 .performance-item {
   padding: 0;
-  margin: 0;
+  margin: 0 0 1rem;
   box-shadow: none;
   flex: 1;
 }
@@ -328,6 +354,12 @@ iframe {
   }
 
   .thumbnail-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .video-thumb-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
