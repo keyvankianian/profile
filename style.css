@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -19,6 +21,7 @@ body.sidebar-open {
   overflow: hidden;
 }
 
+/* Layout */
 header {
   background-color: #004080;
   color: white;
@@ -45,6 +48,7 @@ header .title {
   margin: 0;
 }
 
+/* Tabs */
 .tabs-container {
   position: fixed;
   top: 4.30rem;
@@ -84,7 +88,6 @@ header .title {
   pointer-events: auto;
 }
 
-
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -120,7 +123,7 @@ header .title {
 
 .tabcontent {
   display: none;
-  padding: 20vh 10rem 1.875rem 10rem ;
+  padding: 20vh 10rem 1.875rem 10rem;
   width: 100%;
   margin: auto;
 }
@@ -136,7 +139,7 @@ header .title {
 
 .tab-inner {
   display: flex;
-  width: 100%
+  width: 100%;
   flex-direction: row;
   align-items: flex-start;
   gap: 2.5rem;
@@ -144,6 +147,7 @@ header .title {
   max-width: 100%;
 }
 
+/* Sidebar */
 .sidebar {
   background-color: #f0f0f0;
   padding: 0.75rem;
@@ -166,15 +170,6 @@ header .title {
 
 .sidebar.open {
   transform: translateX(0);
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 80vw;
-  }
-  .tabcontent {
-    padding: 20vh 2rem 1.875rem 2rem ;
-  }
 }
 
 .sidebar a {
@@ -218,8 +213,12 @@ iframe {
   display: flex;
   gap: 0.375rem;
   margin-top: 0.625rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   overflow-x: auto;
-  padding-bottom: 0.375rem;
+  padding: 0.375rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
 }
 
 .thumbnail {
@@ -311,13 +310,6 @@ iframe {
   cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .tab-inner {
-    flex-direction: column;
-  }
-}
-
 .time-jump {
   color: #007bff;
   text-decoration: underline;
@@ -358,7 +350,8 @@ iframe {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* نسبت ابعاد 16:9 */
+  padding-bottom: 56.25%;
+  /* نسبت ابعاد 16:9 */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -375,6 +368,18 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .sidebar {
+    width: 80vw;
+  }
+
+  .tabcontent {
+    padding: 20vh 2rem 1.875rem 2rem;
+  }
+
+  .tab-inner {
+    flex-direction: column;
+  }
+
   .performance-item {
     padding: 0.625rem;
   }
@@ -392,6 +397,10 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0.625rem 0.5rem 0;
+    padding: 0.375rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
   }
 
   .video-thumb-row {
@@ -410,11 +419,12 @@ iframe {
     text-align: center;
   }
 
-  .caption, p {
+  .caption,
+  p {
     font-size: 0.875rem;
   }
+
   .tabs {
     padding-top: 0;
   }
 }
-
