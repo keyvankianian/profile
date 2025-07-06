@@ -130,20 +130,39 @@ const renderPdfTab = async (tabId, jsonUrl) => {
   const sidebar = document.querySelector(`#${tabId} .sidebar`);
   const content = document.querySelector(`#${tabId} .content`);
 
-  sidebar.innerHTML = '';
+  content.innerHTML = '';
+
+    const nav = document.createElement('div');
+    nav.className = 'pdf-nav';
+    content.appendChild(nav);
+    const viewer = document.createElement('div');
+    viewer.className = 'pdf-viewer';
+    content.appendChild(viewer);
+
+    const showPdf = (item, idx) => {
+      viewer.innerHTML = `<div><h2>${item.title}</h2><iframe src="${item.pdf}" class="pdf-frame"></iframe></div>`;
+      sidebar.querySelectorAll('a').forEach(a => a.classList.remove('active-link'));
+      sidebar.querySelectorAll('a')[idx].classList.add('active-link');
+      nav.querySelectorAll('.pdf-thumb').forEach(b => b.classList.remove('selected'));
+      nav.querySelectorAll('.pdf-thumb')[idx].classList.add('selected');
+    };
 
   data.forEach((item, i) => {
     const link = document.createElement('a');
     link.textContent = item.title;
-    link.onclick = (e) => {
-      e.preventDefault();
-      content.innerHTML = `<div><h2>${item.title}</h2><iframe src="${item.pdf}" class="pdf-frame"></iframe></div>`;
-      sidebar.querySelectorAll('a').forEach(a => a.classList.remove('active-link'));
-      link.classList.add('active-link');
-    };
+        link.onclick = (e) => { e.preventDefault(); showPdf(item, i); };
+
     sidebar.append(link);
-    if (!i) link.click();
+const btn = document.createElement('button');
+    btn.textContent = item.title;
+    btn.className = 'pdf-thumb';
+    btn.onclick = () => showPdf(item, i);
+    nav.appendChild(btn);
   });
+  if (data.length) {
+    showPdf(data[0], 0);
+  }
+
   setupSidebarLinks(tabId);
 };
 
