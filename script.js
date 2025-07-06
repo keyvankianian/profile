@@ -55,7 +55,15 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
                     <video id="local-${item.id}" class="video-frame" controls ${item.poster ? `poster="${item.poster}"` : ''} src="${item.video}"></video>
                   </div>`;
         } else if (item.videoID) {
-          video = `<div class="video-container"><iframe id="yt-player-${item.id}" src="https://www.youtube.com/embed/${item.videoID}?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>`;
+         if (item.poster) {
+                     video = `<div class="video-container"><img class="video-poster" data-video-id="${item.videoID}" data-item-id="${item.id}" src="${item.poster}" alt="${item.title} poster"></div>`;
+                   } else {
+         if (item.poster) {
+            video = `<div class="video-container"><img class="video-poster" data-video-id="${item.videoID}" data-item-id="${item.id}" src="${item.poster}" alt="${item.title} poster"></div>`;
+          } else {
+            video = `<div class="video-container"><iframe id="yt-player-${item.id}" src="https://www.youtube.com/embed/${item.videoID}?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>`;
+          }
+                   }
         }
 
 
@@ -74,6 +82,7 @@ const renderTabFromJson = async (tabId, jsonUrl) => {
   setupSidebarLinks(tabId);
   setupThumbnailClicks(tabId);
   setupVideoThumbnailClicks(tabId);
+  setupVideoPosterClicks(tabId);
 };
 
 const convertTimeToSpan = text => text.replace(/(\d{1,2}):(\d{2})/g, (_, m, s) => `<span class="time-jump" data-time="${+m * 60 + +s}">${m}:${s}</span>`);
@@ -109,15 +118,20 @@ const attachTimeJumpListeners = (itemId) => {
   container.querySelectorAll('.time-jump').forEach(el => {
     el.onclick = () => {
       const seconds = parseInt(el.dataset.time, 10);
-      const ytPlayer = ytPlayers[`yt-player-${itemId}`];
+      let ytPlayer = ytPlayers[`yt-player-${itemId}`];
       if (ytPlayer && typeof ytPlayer.seekTo === 'function') {
         ytPlayer.seekTo(seconds, true);
         ytPlayer.playVideo();
       } else {
-        const video = container.querySelector('.video-frame');
-        if (video) {
-          video.currentTime = seconds;
-          video.play();
+        const posterImg = container.querySelector('.video-poster');
+                if (posterImg) {
+                  replacePosterWithPlayer(posterImg, seconds);
+                } else {
+                  const video = container.querySelector('.video-frame');
+                  if (video) {
+                    video.currentTime = seconds;
+                    video.play();
+                  }
         }
       }
     };
@@ -212,3 +226,30 @@ const setupVideoThumbnailClicks = (tabId) => {
   });
 };
 
+const setupVideoPosterClicks = (tabId) => {
+  document.querySelectorAll(`#${tabId} .video-poster`).forEach(img => {
+    img.addEventListener('click', () => {
+      replacePosterWithPlayer(img);
+    }, { once: true });
+  });
+};
+
+function replacePosterWithPlayer(img, startSeconds = null) {
+  const { videoId, itemId } = img.dataset;
+  const container = img.parentElement;
+  container.innerHTML = `<iframe id="yt-player-${itemId}" src="https://www.youtube.com/embed/${videoId}?enablejsapi=1" frameborder="0" allowfullscreen></iframe>`;
+  const onReady = (player) => {
+    attachTimeJumpListeners(itemId);
+    if (startSeconds !== null) {
+      player.seekTo(startSeconds, true);
+      player.playVideo();
+    }
+  };
+  if (window.YT && typeof YT.Player === 'function') {
+    ytPlayers[`yt-player-${itemId}`] = new YT.Player(`yt-player-${itemId}`, {
+      events: { 'onReady': ({ target }) => onReady(target) }
+    });
+  } else {
+    attachTimeJumpListeners(itemId);
+  }
+}
