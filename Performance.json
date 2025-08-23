@@ -296,5 +296,28 @@
       "label": "www.instagram.com",
       "url": "https://www.instagram.com/reel/DFxuuL9uroi/?igsh=ZGpjemFscDZlY3Nr"
     }
+  },
+  {
+    "id": "shokobanOslo2023",
+    "title": "'Shkobān' i Oslo-2023",
+    "videoID": "PCevAW-VT8U",
+    "poster": null,
+    "text": "Som musikledare och kompositör genomförde jag konserter i Norge (15.4.2023). Dessa framträdanden hölls till stöd för rörelsen Kvinna, Liv, Frihet och i protest mot förtrycket av konstnärer samt för att sprida iransk protestmusik.",
+    "source": {
+      "label": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=PCevAW-VT8U"
+    }
+  }, {
+  "id": "shokobanHelsingfors2023",
+  "title": "'Shkobān' i Helsingfors-2023",
+  "img": [
+    "./picture/shokobanHelsingfors2023.jpg"
+  ],
+  "videoID":"dys18vpptYE",
+  "text": "Några månader efter revolutionen Kvinna, Liv, Frihet höll jag en konsert till minne av revolutionens martyrer den 22 april 2023 i Helsingfors, Finland. Denna föreställning genomfördes trots allvarliga hot från den iranska regimen, i stöd för frihet och rättvisa.",
+  "source": {
+    "label": "www.youtube.com",
+    "url": "https://www.youtube.com/watch?v=dys18vpptYE"
   }
+}
 ]
