@@ -1,46 +1,6 @@
 [
-  {
-    "id": "yaranBand2024",
-    "title": "Yaran band 2024",
-    "img": [
-      "./picture/yaranBand2024.jpg"
-    ],
-    "video": "",
-    "poster": null,
-    "text": "Exilkonserter – Jag och Yaran-gruppen har alltid, trots de risker det innebär för mig, stått med musikens röst för kvinnors frihet och kampen mot förtrycket av kvinnors röster i Iran.",
-    "source": null
-  },
-  {
-    "id": "sangMotTystnaden-2025",
-    "title": "Sång mot tystnaden 2025",
-    "img": [
-      "./picture/sangMotTystnaden2025.jpg"
-    ],
-    "video": "./video/sangMotTystnaden2025.mp4",
-    "poster": "./video/sangMotTystnaden2025.jpg",
-    "text": "Evenemanget ”Sång mot tystnaden”, en kamp för konstnärlig frihet och stöd för kvinnor  Evenemanget ”Sång mot tystnaden” hölls den 8 mars 2025 på Sävja Kulturhus och fokuserade på kampen mot den systematiska utestängningen av kvinnor från konstnärliga och sociala arenor, särskilt i Iran. Programmet omfattade musikframträdanden, dokumentärfilmer, teleteater och panelsamtal, och genomfördes med stöd av oberoende organisationer såsom Svenska PEN, IIFMA och Feminists for Jina Sweden i flera städer runt om i världen.  Som ledare och kompositör för musikgruppen Yaran var detta evenemang en del av mitt arbete för att försvara konstnärlig yttrandefrihet och stötta iranska kvinnor inom musik. Det speglar mitt kulturella och sociala engagemang på internationell nivå och min strävan att bevara och främja konstnärlig frihet.  Samma dag, på internationella kvinnodagen, höll vi även en konsert som inte bara var en musikalisk föreställning – den var ett kraftfullt uttalande mot förtryck och påtvingad tystnad. Min dotter Kimia sjöng, min son Karan spelade tombak, min fru Maliheh Al-Sadat spelade daf, och mina elever blev röster för frihet. Varje ton vi framförde kunde ha fått allvarliga konsekvenser om den framförts i Iran.  Konserten uppmärksammades i en rapport från Iran International TV, där jag och min dotter intervjuades om de risker som kvinnliga sångare möter i Iran, om förtrycket mot konstnärer, om försöken att tysta Yarsan-kulturen och om det pris vi betalat för vår yttrandefrihet.  Vi valde att inte vara tysta. Vi visste att vägen vi valt var fylld av hot, men för oss är konsten en form av motstånd – ett sätt att bryta censurens murar och föra fram rösterna från de kvinnor som förvägras rätten att sjunga i vårt hemland.  Vår musik är inte bara konst – den är en kamp som ingen regim kan tysta.  ",
-    "source": {
-      "label": "www.youtube.com",
-      "url": "https://www.youtube.com/watch?v=lZhZG3zvukQ&ab_channel=IranInternational%D8%A7%D9%8A%D8%B1%D8%A7%D9%86%D8%A7%D9%8A%D9%86%D8%AA%D8%B1%D9%86%D8%B4%D9%86%D8%A7%D9%84"
-    }
-  },
-  {
-    "id": "minaAktiviteter",
-    "title": "Mina konstnärliga aktiviteter",
-    "img": [
-      "./picture/minaAktiviteter_1.jpg",
-      "./picture/minaAktiviteter_2.jpg",
-      "./picture/minaAktiviteter_3.jpg",
-      "./picture/minaAktiviteter_4.jpg",
-      "./picture/minaAktiviteter_5.jpg",
-      "./picture/minaAktiviteter_6.jpg",
-      "./picture/minaAktiviteter_7.jpg"
-    ],
-    "video": "./video/minaAktiviteter.mp4",
-    "poster": null,
-    "text": "Dessa affischer representerar mina musik- och kulturevenemang i olika städer i Sverige under olika tidsperioder. Dessa program har arrangerats för att stödja kvinnors rättigheter, konstnärlig yttrandefrihet och kampen mot de restriktioner som påtvingas kvinnliga konstnärer, särskilt i Iran. Som ledare och kompositör för musikgruppen \"Yaran\" är jag fortsatt aktiv inom musik och konstnärliga aktiviteter relaterade till kvinnors rättigheter i Sverige och internationellt. Dessa framträdanden är en del av mitt pågående arbete för att stärka iranska kvinnors röster och bevara deras konstnärliga frihet på en global nivå.",
-    "source": null
-  },
+
+
   {
     "id": "worldMusicFestival2023",
     "title": "Jina (Mahsa) – Göteborg, april 2023",
@@ -58,15 +18,12 @@
   {
     "id": "shokobanOslo2023",
     "title": "'Shkobān' i Oslo-2023",
-    "img": [
-      "./picture/shokobanOslo2023.jpg"
-    ],
-    "video": "./video/shokobanOslo2023.mp4",
+    "videoID": "PCevAW-VT8U",
     "poster": null,
     "text": "Som musikledare och kompositör genomförde jag konserter i Norge (15.4.2023). Dessa framträdanden hölls till stöd för rörelsen Kvinna, Liv, Frihet och i protest mot förtrycket av konstnärer samt för att sprida iransk protestmusik.",
     "source": {
       "label": "www.youtube.com",
-      "url": "https://www.youtube.com/watch?v=PCevAW-VT8U&ab_channel=BrifkanNishani"
+      "url": "https://www.youtube.com/watch?v=PCevAW-VT8U"
     }
   },
   {
@@ -75,12 +32,11 @@
     "img": [
       "./picture/shokobanHelsingfors2023.jpg"
     ],
-    "video": "./video/shokobanHelsingfors2023.mp4",
-    "poster": "./video/shokobanHelsingfors2023.jpg",
+    "videoID":"dys18vpptYE",
     "text": "Några månader efter revolutionen Kvinna, Liv, Frihet höll jag en konsert till minne av revolutionens martyrer den 22 april 2023 i Helsingfors, Finland. Denna föreställning genomfördes trots allvarliga hot från den iranska regimen, i stöd för frihet och rättvisa.",
     "source": {
       "label": "www.youtube.com",
-      "url": "https://www.youtube.com/watch?v=dys18vpptYE&ab_channel=DiakoAhar"
+      "url": "https://www.youtube.com/watch?v=dys18vpptYE"
     }
   },
   {
@@ -104,20 +60,6 @@
     "poster": null,
     "text": "På inbjudan av Bamdad kulturförening höll jag en konsert den 17 mars 2023 i Rotterdam, Nederländerna, några månader efter revolutionen Kvinna, Liv, Frihet, till minne av revolutionens martyrer. Denna föreställning genomfördes trots allvarliga hot från den iranska regimen, i stöd för frihet och rättvisa.",
     "source": null
-  },
-  {
-    "id": "GudsSjuNamn",
-    "title": "Musikverk om Guds sju namn",
-    "img": [
-      "./picture/GudsSjuNamn.jpg"
-    ],
-    "video": null,
-    "poster": null,
-    "text": "Ett musikverk skapades där jag stod för tanburspel och melodiskapande. Verket är baserat på en dikt av den indiske tänkaren Meher Baba om Guds sju namn och framfördes med sång av Frimaher. Videon av detta verk fick över 70 000 visningar på Instagram och fick stor uppmärksamhet. Att framföra detta verk i Iran var omöjligt och skulle ha inneburit allvarliga risker för mig – både på grund av förbudet mot kvinnlig sång och det tydliga budskapet om yttrandefrihet och respekt för alla religioner som syns i videon. ",
-    "source": {
-      "label": "www.instagram.com",
-      "url": "https://www.instagram.com/reel/DFxuuL9uroi/?igsh=ZGpjemFscDZlY3Nr"
-    }
   },
   {
     "id": "vesteras2024",

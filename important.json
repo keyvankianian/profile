@@ -4,7 +4,7 @@
     "title": "Dokumentärvideo från Xaniqar-firandet – Framträdande av musikgruppen Yarsan i Sverige",
     "img": null,
     "videoID": "eqDnsexTX7w",
-    "poster": "./picture/sangMotTystnaden2025.jpg",
+    "poster": "./picture/Xaniqar-firandet.jpg",
     "text": "<p>\n  Denna video visar firandet av <strong>Xaniqar</strong>, en av de största högtiderna inom den religiösa tron Yarsan (även kallad Ahl-e Haqq), som hölls år <strong>2024 i Sverige</strong>. Vid detta tillfälle framförde <strong>musikgruppen ”Yarsan”</strong>, under ledning av mig, <strong>Keyvan Kianian</strong>, andlig och traditionell musik samt musik med budskap om frihet och protest.\n</p>\n\n<p>\n  Från minut <strong>5:40</strong> intervjuas jag och några av mina elever. Jag talar om vikten av att <strong>undervisa exilens Yarsan-ungdomar i andlig musik</strong>, att <strong>återuppliva de traditioner som undertrycks av den iranska regimen</strong>, och om att kunna fira Xaniqar utan rädsla eller hot.\n</p>\n\n<p>\n  Detta evenemang är ett tydligt exempel på våra kontinuerliga insatser i exil för att:<br>\n  • bevara den kulturella och religiösa identiteten hos Yarsan-samhället,<br>\n  • stå emot den systematiska diskrimineringen och förföljelsen från den islamiska republiken Iran,<br>\n  • och ge unga i exil kunskap om sina andliga och kulturella rötter.\n</p>\n\n<p>\n  \uD83D\uDD34 Denna video är ett konkret bevis på vårt konstnärliga, pedagogiska och sociala arbete i exil – ett arbete som skulle vara omöjligt att genomföra i Iran.\n</p>\n",
     "source": {
       "label": "Youtube",
@@ -116,7 +116,7 @@
     "title": "Iran International",
     "img": null,
     "videoID": "lZhZG3zvukQ",
-    "text": "<p>\n  <strong>Särskild rapport från Iran International – Kvinnodagens konsert: Musik mot förtryck</strong><br>\n  Den <strong>8 mars 2024</strong>, på en dag då världen talar om <strong>frihet och kvinnors rättigheter</strong>, stod vi upp mot <strong>förtryck och påtvingad tystnad</strong>.<br>\n  Konserten vi höll var inte bara en musikalisk föreställning; det var en deklaration av motstånd mot det förtryck som kvinnor och religiösa minoriteter upplever i Iran.\n</p>\n\n<p>\n  Min dotter <strong>Kimia</strong> sjöng, min son <strong>Karan</strong> spelade tombak, min fru <strong>Malileh Al-Sadat</strong> slog på daf, och mina elever höll <strong>röster för frihet</strong>.<br>\n  Varje ton vi spelade, varje sång vi sjöng, kunde ha lett till allvarliga konsekvenser för oss i Iran.\n</p>\n\n<p>\n  Denna konsert uppmärksammades i en rapport av <strong>Iran International</strong>.<br>\n  Jag och min dotter intervjuades om de risker som en kvinnlig sångare står inför i Iran, om <strong>förtrycket av artister</strong>, om försöken att tysta <strong>Yarsan-kulturen</strong> och om priset vi har betalat för <strong>yttrandefrihet</strong>.\n</p>\n\n<p>\n  <strong>Men vi valde att inte vara tysta.</strong><br>\n  Vi visste att denna väg var fylld av hot, men för oss är konsten en form av motstånd, ett sätt att bryta censurens murar och att föra fram rösterna från de kvinnor som i vårt land nekas rätten att sjunga.\n</p>\n\n<p>\n  <strong>Vår musik är inte bara konst; den är en kamp som ingen regim kan tysta.</strong>\n</p>\n",
+    "text": "<p>\n  <strong>Särskild rapport från Iran International – Kvinnodagens konsert: Musik mot förtryck</strong><br>\n  Den <strong>8 mars 2025</strong>, på en dag då världen talar om <strong>frihet och kvinnors rättigheter</strong>, stod vi upp mot <strong>förtryck och påtvingad tystnad</strong>.<br>\n  Konserten vi höll var inte bara en musikalisk föreställning; det var en deklaration av motstånd mot det förtryck som kvinnor och religiösa minoriteter upplever i Iran.\n</p>\n\n<p>\n  Min dotter <strong>Kimia</strong> sjöng, min son <strong>Karan</strong> spelade tombak, min fru <strong>Malileh Al-Sadat</strong> slog på daf, och mina elever höll <strong>röster för frihet</strong>.<br>\n  Varje ton vi spelade, varje sång vi sjöng, kunde ha lett till allvarliga konsekvenser för oss i Iran.\n</p>\n\n<p>\n  Denna konsert uppmärksammades i en rapport av <strong>Iran International</strong>.<br>\n  Jag och min dotter intervjuades om de risker som en kvinnlig sångare står inför i Iran, om <strong>förtrycket av artister</strong>, om försöken att tysta <strong>Yarsan-kulturen</strong> och om priset vi har betalat för <strong>yttrandefrihet</strong>.\n</p>\n\n<p>\n  <strong>Men vi valde att inte vara tysta.</strong><br>\n  Vi visste att denna väg var fylld av hot, men för oss är konsten en form av motstånd, ett sätt att bryta censurens murar och att föra fram rösterna från de kvinnor som i vårt land nekas rätten att sjunga.\n</p>\n\n<p>\n  <strong>Vår musik är inte bara konst; den är en kamp som ingen regim kan tysta.</strong>\n</p>\n",
     "source": {
       "label": "Youtube",
       "url": "https://www.youtube.com/watch?v=lZhZG3zvukQ"
@@ -203,6 +203,7 @@
   "id": "eurokurd2024",
   "title": "Euro kurd 2024",
   "img": null,
+  "poster": "./picture/eurokurd2024.jpg",
   "videoID": "q999bCIQ_3E",
   "text": "Samarbete mellan Balushan-gruppen, som jag själv leder, och Yarsan.",
   "source": {
@@ -281,5 +282,19 @@
   "poster": "./video/KurdiskaKulturFestivalen2024.jpg",
   "text": "Exilkonserter – Jag och Yaran-gruppen har alltid, trots de risker det innebär för mig, stått med musikens röst för kvinnors frihet och kampen mot förtrycket av kvinnors röster i Iran.",
   "source": null
-}
+},
+  {
+    "id": "GudsSjuNamn",
+    "title": "Musikverk om Guds sju namn",
+    "img": [
+      "./picture/GudsSjuNamn.jpg"
+    ],
+    "video": null,
+    "poster": null,
+    "text": "Ett musikverk skapades där jag stod för tanburspel och melodiskapande. Verket är baserat på en dikt av den indiske tänkaren Meher Baba om Guds sju namn och framfördes med sång av Frimaher. Videon av detta verk fick över 70 000 visningar på Instagram och fick stor uppmärksamhet. Att framföra detta verk i Iran var omöjligt och skulle ha inneburit allvarliga risker för mig – både på grund av förbudet mot kvinnlig sång och det tydliga budskapet om yttrandefrihet och respekt för alla religioner som syns i videon. ",
+    "source": {
+      "label": "www.instagram.com",
+      "url": "https://www.instagram.com/reel/DFxuuL9uroi/?igsh=ZGpjemFscDZlY3Nr"
+    }
+  }
 ]
