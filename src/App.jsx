@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
-const DATA_BASE_PATH = '/data';
+const DATA_BASE_PATH = `${import.meta.env.BASE_URL}data`;
 const ACTIVE_TAB_KEY = 'activeTab';
 const DEFAULT_TAB = 'Performance';
 
