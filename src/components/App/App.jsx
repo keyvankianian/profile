@@ -12,27 +12,27 @@ const tabs = [
   {
     id: 'artiklar',
     label: { sv: 'Artiklar', fa: 'مقالات' },
-    dataPath: { sv: `${DATA_BASE_PATH}/artiklar.json`, fa: `${DATA_BASE_PATH}/artiklar.json` }
+    dataPath: { sv: `${DATA_BASE_PATH}/artiklar.json`, fa: `${DATA_BASE_PATH}/artiklar.fa.json` }
   },
   {
     id: 'bilder',
     label: { sv: 'Bilder', fa: 'تصاویر' },
-    dataPath: { sv: `${DATA_BASE_PATH}/bilder.json`, fa: `${DATA_BASE_PATH}/bilder.json` }
+    dataPath: { sv: `${DATA_BASE_PATH}/bilder.json`, fa: `${DATA_BASE_PATH}/bilder.fa.json` }
   },
   {
     id: 'Performance',
     label: { sv: 'Performance', fa: 'اجراها' },
-    dataPath: { sv: `${DATA_BASE_PATH}/Performance.json`, fa: `${DATA_BASE_PATH}/Performance.json` }
+    dataPath: { sv: `${DATA_BASE_PATH}/Performance.json`, fa: `${DATA_BASE_PATH}/Performance.fa.json` }
   },
   {
     id: 'interview',
     label: { sv: 'Interview', fa: 'مصاحبه‌ها' },
-    dataPath: { sv: `${DATA_BASE_PATH}/interview.json`, fa: `${DATA_BASE_PATH}/interview.json` }
+    dataPath: { sv: `${DATA_BASE_PATH}/interview.json`, fa: `${DATA_BASE_PATH}/interview.fa.json` }
   },
   {
     id: 'pdfs',
     label: { sv: 'Dokuments', fa: 'اسناد' },
-    dataPath: { sv: `${DATA_BASE_PATH}/pdfs.json`, fa: `${DATA_BASE_PATH}/pdfs.json` }
+    dataPath: { sv: `${DATA_BASE_PATH}/pdfs.json`, fa: `${DATA_BASE_PATH}/pdfs.fa.json` }
   }
 ];
 
