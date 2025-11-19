@@ -34,5 +34,5 @@ The site is deployed to GitHub Pages from the `gh-pages` artifact created in CI.
 2. Runs `npm run build` to emit the static site into `dist/`.
 3. Publishes the build output via `actions/upload-pages-artifact` and `actions/deploy-pages`.
 
-Because the production site is served from `https://<username>.github.io/profile/`, the Vite config (`vite.config.js`) sets
-`base` to `/profile/` so all asset URLs resolve correctly on GitHub Pages.
+The Vite config (`vite.config.js`) uses a relative `base` (`'./'`) so the compiled bundle works whether it is hosted at the
+repository path on GitHub Pages, a custom domain root or even opened directly from the file system.

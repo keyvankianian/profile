@@ -1,25 +1,25 @@
-[ {
-  "id": "stockholm",
-  "title": "Politisk Aktivist i stockholm",
-  "img": [
-    "/assets/picture/amineKakaBaveh.jpg",
-    "/assets/picture/ashkan_mojalal_stockholm.jpg",
-    "/assets/picture/najm_eldin_gholami.jpg",
-    "/assets/picture/naser_razazi_stockholm.jpg",
-    "/assets/picture/showanParvar_stockholm.jpg",
-    "/assets/picture/keyhanKalhor&RostaMirLaShari.jpg"
-
-  ],
-  "text": "<p> Som en del av min fortsatta kamp för yttrandefrihet och tankefrihet i Iran har jag regelbundna möten i Stockholm med personer som är välkända inom denna rörelse. Jag är ständigt i dialog och tankeutbyte med dem.  </p> <strong>Amine Kakabaveh</strong><br> En välkänd människorättsaktivist och före detta riksdagsledamot i Sverige. </p> <p> <strong>Ashkan Khatibi</strong><br> En tidigare politisk fånge i Iran som nu är bosatt i Italien och aktiv som politisk motståndare.  </p>  <p> <strong>Alireza Mojallal</strong><br> Skådespelare och regissör, verksam i Sverige och engagerad i politisk aktivism.  </p>  <p> <strong>Showan Parvar</strong><br> Sångare och politisk konstnär.  </p>  <p> <strong>Naser Razazi</strong><br> Politisk aktivist.  </p><p> <strong>Keyhan Kalhor & Rostam Mirlashari</strong><br> Politisk aktivister.  </p> ",
-  "source": null
-},
+[
+  {
+    "id": "stockholm",
+    "title": "Politisk Aktivist i stockholm",
+    "img": [
+      "./assets/picture/amineKakaBaveh.jpg",
+      "./assets/picture/ashkan_mojalal_stockholm.jpg",
+      "./assets/picture/najm_eldin_gholami.jpg",
+      "./assets/picture/naser_razazi_stockholm.jpg",
+      "./assets/picture/showanParvar_stockholm.jpg",
+      "./assets/picture/keyhanKalhor&RostaMirLaShari.jpg"
+    ],
+    "text": "<p> Som en del av min fortsatta kamp för yttrandefrihet och tankefrihet i Iran har jag regelbundna möten i Stockholm med personer som är välkända inom denna rörelse. Jag är ständigt i dialog och tankeutbyte med dem.  </p> <strong>Amine Kakabaveh</strong><br> En välkänd människorättsaktivist och före detta riksdagsledamot i Sverige. </p> <p> <strong>Ashkan Khatibi</strong><br> En tidigare politisk fånge i Iran som nu är bosatt i Italien och aktiv som politisk motståndare.  </p>  <p> <strong>Alireza Mojallal</strong><br> Skådespelare och regissör, verksam i Sverige och engagerad i politisk aktivism.  </p>  <p> <strong>Showan Parvar</strong><br> Sångare och politisk konstnär.  </p>  <p> <strong>Naser Razazi</strong><br> Politisk aktivist.  </p><p> <strong>Keyhan Kalhor & Rostam Mirlashari</strong><br> Politisk aktivister.  </p> ",
+    "source": null
+  },
   {
     "id": "sabuni2013",
     "title": "konferensen om kvinnors rättigheter i Stockholm – 2013",
     "img": [
-      "/assets/picture/Nyamko_with_me.jpg",
-      "/assets/picture/Nyamko_with_me_2.jpg",
-      "/assets/picture/Nyamko_with_me_3.jpg"
+      "./assets/picture/Nyamko_with_me.jpg",
+      "./assets/picture/Nyamko_with_me_2.jpg",
+      "./assets/picture/Nyamko_with_me_3.jpg"
     ],
     "text": "Deltagande i konferensen om kvinnors rättigheter i Stockholm – 2013. Höll ett tal om iranska flickors svårigheter och framförde musik för att förmedla budskapet om kvinnors frihet. Hade även ett samtal med Nyamko Sabuni, före detta jämställdhetsminister i Sverige, om situationen för kvinnor i Iran.",
     "source": null
@@ -28,9 +28,9 @@
     "id": "yarsansstod",
     "title": "Yarsans stöd",
     "img": [
-      "/assets/picture/Nasrudin_heydari.jpg",
-      "/assets/picture/najm_aldin_heydari.jpg",
-      "/assets/picture/yaresan_kändis.jpg"
+      "./assets/picture/Nasrudin_heydari.jpg",
+      "./assets/picture/najm_aldin_heydari.jpg",
+      "./assets/picture/yaresan_kändis.jpg"
     ],
     "text": "Stöd från Yarsans andliga ledare för min konstnärliga verksamhet Seyed Nasruddin Heydari och hans efterträdare Seyed Najmuddin Heydari har uttryckt sitt stöd för min konstnärliga verksamhet i bevarandet och spridningen av Yarsans musik och kultur. Min roll som mästare inom Tanbur och beskyddare av detta värdefulla arv har bekräftats av dem, och denna verksamhet fortsätter i linje med att återuppliva Yarsans kulturella identitet.<br/> Det finns även ett annat foto där jag tillsammans med framstående personer inom Yarsansamhället, såsom Neamat Zahmatkesh, Iraj Zahmatkesh och Keyvan Ghalkhani, syns. Som en erkänd Yarsan har jag kontakt och umgänge med dessa personer, vilket ytterligare bekräftar mitt engagemang i Yarsans kulturella och andliga gemenskap.",
     "source": null
@@ -39,9 +39,9 @@
     "id": "oslo",
     "title": "Politisk Aktivist i Oslo",
     "img": [
-      "/assets/picture/azad_azizi_oslo.jpg",
-      "/assets/picture/eliasi_oslo.jpg",
-      "/assets/picture/kaveh_oslo.jpg"
+      "./assets/picture/azad_azizi_oslo.jpg",
+      "./assets/picture/eliasi_oslo.jpg",
+      "./assets/picture/kaveh_oslo.jpg"
     ],
     "text": "I Oslo träffade jag flera kända politiska aktivister, däribland Azad Azizi och professor Ghader Eliasi.",
     "source": null
@@ -50,17 +50,17 @@
     "id": "minaAktiviteter",
     "title": "Mina konstnärliga aktiviteter",
     "img": [
-      "/assets/picture/sangMotTystnaden2025.jpg",
-      "/assets/picture/minaAktiviteter_1.jpg",
-      "/assets/picture/minaAktiviteter_2.jpg",
-      "/assets/picture/minaAktiviteter_3.jpg",
-      "/assets/picture/minaAktiviteter_4.jpg",
-      "/assets/picture/minaAktiviteter_5.jpg",
-      "/assets/picture/minaAktiviteter_6.jpg",
-      "/assets/picture/minaAktiviteter_7.jpg",
-      "/assets/picture/yaranBand2024.jpg",
-      "/assets/picture/worldMusicFestival2023.jpg",
-      "/assets/picture/shokobanOslo2023.jpg"
+      "./assets/picture/sangMotTystnaden2025.jpg",
+      "./assets/picture/minaAktiviteter_1.jpg",
+      "./assets/picture/minaAktiviteter_2.jpg",
+      "./assets/picture/minaAktiviteter_3.jpg",
+      "./assets/picture/minaAktiviteter_4.jpg",
+      "./assets/picture/minaAktiviteter_5.jpg",
+      "./assets/picture/minaAktiviteter_6.jpg",
+      "./assets/picture/minaAktiviteter_7.jpg",
+      "./assets/picture/yaranBand2024.jpg",
+      "./assets/picture/worldMusicFestival2023.jpg",
+      "./assets/picture/shokobanOslo2023.jpg"
     ],
     "text": "Dessa affischer representerar mina musik- och kulturevenemang i olika städer i Sverige under olika tidsperioder. Dessa program har arrangerats för att stödja kvinnors rättigheter, konstnärlig yttrandefrihet och kampen mot de restriktioner som påtvingas kvinnliga konstnärer, särskilt i Iran. Som ledare och kompositör för musikgruppen \"Yaran\" är jag fortsatt aktiv inom musik och konstnärliga aktiviteter relaterade till kvinnors rättigheter i Sverige och internationellt. Dessa framträdanden är en del av mitt pågående arbete för att stärka iranska kvinnors röster och bevara deras konstnärliga frihet på en global nivå.",
     "source": null
@@ -69,7 +69,7 @@
     "id": "khavankar",
     "title": "Yaresan-firandets kväll på Arian TV",
     "img": [
-      "/assets/picture/khavankar.jpg"
+      "./assets/picture/khavankar.jpg"
     ],
     "text": "<p>Efter den religiösa ceremonin firade vi <strong>Khavankar-högtiden (Yaresan)</strong> tillsammans med familj och musikstudenter genom en musik- och kulturföreställning på Arian TV.</p><p>Programmet innehöll traditionell musik och rituella inslag som speglar Yaresan-kulturens andliga arv.</p>",
     "source": null
@@ -78,7 +78,7 @@
     "id": "NimaSarvestani",
     "title": "Tillsammans med iranska kultur- och samhällsprofiler i Sverige",
     "img": [
-      "/assets/picture/NimaSarvestani.jpg"
+      "./assets/picture/NimaSarvestani.jpg"
     ],
     "text": "<p>På denna bild syns jag tillsammans med flera framstående iransk-svenska kultur- och samhällsprofiler:</p><ul><li><strong>Nima Sarvestani</strong> – prisbelönt dokumentärfilmare och regissör, känd för sina filmer om mänskliga rättigheter och sociala frågor.</li><li><strong>Amineh Kakabaveh</strong> – före detta riksdagsledamot och en välkänd människorättsaktivist som länge har kämpat för kvinnors rättigheter och jämlikhet samt är en uttalad kritiker av Irans regim.</li><li><strong>Masoud Mafaan</strong> – ansvarig för förlaget Baran i Stockholm, ett av de äldsta och mest betydelsefulla exil-iranska förlagen.</li><li><strong>Helen Hemmati Hammarström</strong> – iransk-svensk teaterregissör och dramatiker verksam inom scenkonst och samtida kultur i Sverige.</li><li><strong>Kimia</strong> – min dotter.</li></ul><p>Närvaron tillsammans med dessa personer visar min nära koppling till det iransk-svenska kultur- och konstnärssamhället som står i opposition till den iranska regimen.</p>",
     "source": null
