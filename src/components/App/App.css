@@ -1,0 +1,110 @@
+header {
+  background-color: #004080;
+  color: white;
+  line-height: 1;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  position: absolute;
+  left: 1.25rem;
+  font-size: 1rem;
+}
+
+header .title {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.tabs-container {
+  position: fixed;
+  top: 4.3rem;
+  left: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  z-index: 999;
+  padding: 1rem 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.sidebar-toggle {
+  background: #004080;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.overlay.show {
+  display: block;
+  pointer-events: auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+  border-bottom: 0.125rem solid #ccc;
+}
+
+.tablink {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 0.375rem 0.375rem 0 0;
+  padding: 0.375rem 0.75rem;
+  margin: 0 0.25rem;
+  font-weight: bold;
+  color: #004080;
+  cursor: pointer;
+  box-shadow: 0 -0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tablink:hover {
+  background-color: #f0f0f0;
+}
+
+.tablink.active {
+  background-color: #004080;
+  color: white;
+  border-color: #004080;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .tablink {
+    font-size: 0.75rem;
+    padding: 0.375rem;
+    flex: 1 0 30%;
+    text-align: center;
+  }
+
+  .tabs {
+    padding-top: 0;
+  }
+}
