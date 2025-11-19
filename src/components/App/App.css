@@ -19,8 +19,9 @@ header {
 .title-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.35rem;
+  text-align: left;
 }
 
 header .print-button {
@@ -55,8 +56,7 @@ header .title {
   font-size: clamp(1.5rem, 4vw, 2.4rem);
   margin: 0;
   font-weight: 600;
-  text-align: center;
-  justify-self: center;
+  text-align: left;
 }
 
 .language-switch {
@@ -186,6 +186,11 @@ header .title {
 [dir='rtl'] header {
   direction: rtl;
   grid-template-columns: auto 1fr auto;
+}
+
+[dir='rtl'] .title-group {
+  align-items: flex-end;
+  text-align: right;
 }
 
 [dir='rtl'] .tabs-container,

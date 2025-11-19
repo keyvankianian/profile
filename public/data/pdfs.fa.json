@@ -1,0 +1,44 @@
+[
+  {
+    "id": "Kiarash Houshmand",
+    "title": "گزارش سالانه ۲۰۲۳ – مرکز فرهنگی یارسان",
+    "pdf": "./assets/pdfs/KiarashHoushmand.pdf",
+    "caption": "گزارشی مفصل از برنامه‌ها و فعالیت‌های سال ۲۰۲۳."
+  },
+  {
+    "id": "Karl Mattias Bergsten",
+    "title": "مانیفست آزادی هنری",
+    "pdf": "./assets/pdfs/KarlMattiasBergsten.pdf",
+    "caption": "سندی درباره دیدگاه ما نسبت به آزادی و نقش تبعید."
+  },
+  {
+    "id": "KARAVAN MUSIKFÖRENING",
+    "title": "KARAVAN_MUSIKFÖRENING",
+    "pdf": "./assets/pdfs/KARAVAN_MUSIKFÖRENING.pdf",
+    "caption": "سندی درباره دیدگاه ما نسبت به آزادی و نقش تبعید."
+  },
+  {
+    "id": "Föreningen_Hoo_Mat",
+    "title": "انجمن هومات",
+    "pdf": "./assets/pdfs/Föreningen_Hoo_Mat.pdf",
+    "caption": "سندی درباره نگاه ما به آزادی و نقش تبعید."
+  },
+  {
+    "id": "alireza_mojallal",
+    "title": "علیرضا مجلل",
+    "pdf": "./assets/pdfs/alireza_mojallal.pdf",
+    "caption": "سندی درباره دیدگاه ما نسبت به آزادی و نقش تبعید."
+  },
+  {
+    "id": "EnamKarami",
+    "title": "انام کرمی",
+    "pdf": "./assets/pdfs/EnamKarami.pdf",
+    "caption": "سندی درباره نگاه ما به آزادی و نقش تبعید."
+  },
+  {
+    "id": "YaresanCulturalInstitute",
+    "title": "مؤسسه فرهنگی یارسان",
+    "pdf": "./assets/pdfs/YaresanCulturalInstitute.pdf",
+    "caption": "سندی درباره دیدگاه ما نسبت به آزادی و نقش تبعید."
+  }
+]

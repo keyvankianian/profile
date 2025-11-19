@@ -1,0 +1,86 @@
+[
+  {
+    "id": "stockholm",
+    "title": "فعالیت سیاسی در استکهلم",
+    "img": [
+      "./assets/picture/amineKakaBaveh.jpg",
+      "./assets/picture/ashkan_mojalal_stockholm.jpg",
+      "./assets/picture/najm_eldin_gholami.jpg",
+      "./assets/picture/naser_razazi_stockholm.jpg",
+      "./assets/picture/showanParvar_stockholm.jpg",
+      "./assets/picture/keyhanKalhor&RostaMirLaShari.jpg"
+    ],
+    "text": "<p>به عنوان بخشی از تلاش مداومم برای آزادی بیان در ایران، در استکهلم با چهره‌های شناخته‌شده سیاسی و فرهنگی دیدار می‌کنم و پیوسته در گفتگو و تبادل نظر با آنها هستم.</p><p><strong>آمنه کاکاباوه</strong> – فعال حقوق بشر و نماینده پیشین پارلمان سوئد.</p><p><strong>اشکان خطیبی</strong> – زندانی سیاسی سابق در ایران و فعال سیاسی در تبعید.</p><p><strong>علیرضا مجلل</strong> – بازیگر و کارگردان ساکن سوئد و درگیر فعالیت‌های سیاسی.</p><p><strong>شوان پارور</strong> – خواننده و هنرمند سیاسی.</p><p><strong>ناصر رضا‌زی</strong> – فعال سیاسی.</p><p><strong>کیهان کلهر و رستم میرلاشاری</strong> – هنرمندان و فعالان سیاسی.</p>",
+    "source": null
+  },
+  {
+    "id": "sabuni2013",
+    "title": "کنفرانس حقوق زنان در استکهلم – ۲۰۱۳",
+    "img": [
+      "./assets/picture/Nyamko_with_me.jpg",
+      "./assets/picture/Nyamko_with_me_2.jpg",
+      "./assets/picture/Nyamko_with_me_3.jpg"
+    ],
+    "text": "حضور در کنفرانس حقوق زنان در سال ۲۰۱۳؛ در این برنامه درباره مشکلات دختران ایرانی سخنرانی کردم، اجرا داشتم و با نیامکو سابونی (وزیر پیشین برابری سوئد) درباره وضعیت زنان ایران گفتگو کردم.",
+    "source": null
+  },
+  {
+    "id": "yarsansstod",
+    "title": "حمایت یارسان",
+    "img": [
+      "./assets/picture/Nasrudin_heydari.jpg",
+      "./assets/picture/najm_aldin_heydari.jpg",
+      "./assets/picture/yaresan_kändis.jpg"
+    ],
+    "text": "<p>سید نصرالدین حیدری و جانشین او سید نجم‌الدین حیدری حمایت خود را از فعالیت هنری من برای حفظ موسیقی و فرهنگ یارسان اعلام کرده‌اند. نقش من به عنوان نوازنده تنبور و پاسدار این میراث تأیید شده و در راستای احیای هویت یارسان ادامه دارد.</p><p>در عکس دیگر در کنار نئامت زحمتکش، ایرج زحمتکش و کیوان قلخانی دیده می‌شوم که بیانگر ارتباط نزدیکم با جامعه یارسان است.</p>",
+    "source": null
+  },
+  {
+    "id": "oslo",
+    "title": "فعالیت سیاسی در اسلو",
+    "img": [
+      "./assets/picture/azad_azizi_oslo.jpg",
+      "./assets/picture/eliasi_oslo.jpg",
+      "./assets/picture/kaveh_oslo.jpg"
+    ],
+    "text": "دیدار با چند فعال سیاسی سرشناس از جمله آزاد عزیزی و استاد قادر الیاسی در اسلو.",
+    "source": null
+  },
+  {
+    "id": "minaAktiviteter",
+    "title": "پوسترهای فعالیت‌های هنری من",
+    "img": [
+      "./assets/picture/sangMotTystnaden2025.jpg",
+      "./assets/picture/minaAktiviteter_1.jpg",
+      "./assets/picture/minaAktiviteter_2.jpg",
+      "./assets/picture/minaAktiviteter_3.jpg",
+      "./assets/picture/minaAktiviteter_4.jpg",
+      "./assets/picture/minaAktiviteter_5.jpg",
+      "./assets/picture/minaAktiviteter_6.jpg",
+      "./assets/picture/minaAktiviteter_7.jpg",
+      "./assets/picture/yaranBand2024.jpg",
+      "./assets/picture/worldMusicFestival2023.jpg",
+      "./assets/picture/shokobanOslo2023.jpg"
+    ],
+    "text": "این پوسترها بخشی از برنامه‌های موسیقایی و فرهنگی من در شهرهای مختلف سوئد است که برای حمایت از حقوق زنان و آزادی بیان هنری برگزار شده‌اند. به عنوان رهبر و آهنگساز گروه \"یاران\" به فعالیت برای آزادی هنری زنان در سوئد و جهان ادامه می‌دهم.",
+    "source": null
+  },
+  {
+    "id": "khavankar",
+    "title": "جشن خواونکار در تلویزیون آریان",
+    "img": [
+      "./assets/picture/khavankar.jpg"
+    ],
+    "text": "<p>پس از مراسم مذهبی، جشن <strong>خواونکار (یارسان)</strong> را همراه خانواده و هنرجویان موسیقی با اجرای زنده در تلویزیون آریان برگزار کردیم.</p><p>برنامه شامل موسیقی و آیین‌های سنتی یارسان بود و میراث معنوی این فرهنگ را نشان داد.</p>",
+    "source": null
+  },
+  {
+    "id": "NimaSarvestani",
+    "title": "در کنار چهره‌های فرهنگی ایرانی در سوئد",
+    "img": [
+      "./assets/picture/NimaSarvestani.jpg"
+    ],
+    "text": "<p>در این عکس همراه چند چهره برجسته جامعه فرهنگی ایرانی–سوئدی دیده می‌شوم:</p><ul><li><strong>نیما سروستانی</strong> – مستندساز برنده جایزه و مدافع حقوق بشر.</li><li><strong>آمنه کاکاباوه</strong> – نماینده پیشین پارلمان و فعال حقوق زنان و منتقد رژیم ایران.</li><li><strong>مسعود مافعان</strong> – مسئول انتشارات باران در استکهلم.</li><li><strong>هلن همتی همارستروم</strong> – کارگردان و نمایشنامه‌نویس ایرانی–سوئدی.</li><li><strong>کیمیا</strong> – دخترم.</li></ul><p>این حضور نشان‌دهنده ارتباط نزدیک من با جامعه هنری مخالف رژیم ایران است.</p>",
+    "source": null
+  }
+]
