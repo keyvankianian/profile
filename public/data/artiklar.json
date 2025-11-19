@@ -3,7 +3,7 @@
     "id": "cgie",
     "title": "CGIE – 2019",
     "img": [
-      "./picture/cgie_2017.jpg"
+      "/assets/picture/cgie_2017.jpg"
     ],
     "video": null,
     "poster": null,
@@ -17,7 +17,7 @@
     "id": "honardastan",
     "title": "Honardastan 2017",
     "img": [
-      "./picture/honardastan_2017.jpg"
+      "/assets/picture/honardastan_2017.jpg"
     ],
     "video": null,
     "poster": null,
@@ -31,7 +31,7 @@
     "id": "radiohamrah",
     "title": "Radio Hamrah 2017",
     "img": [
-      "./picture/RadioHamrah_i_Los_Angeles_2017.jpg"
+      "/assets/picture/RadioHamrah_i_Los_Angeles_2017.jpg"
     ],
     "video": null,
     "poster": null,
@@ -42,7 +42,7 @@
     "id": "Isna",
     "title": "Nyhetsbyrå Isna 2017",
     "img": [
-      "./picture/ISNA_Picture.jpg"
+      "/assets/picture/ISNA_Picture.jpg"
     ],
     "video": null,
     "poster": null,
@@ -56,7 +56,7 @@
     "id": "yarsan2016",
     "title": "Yarsanfederationen 2016",
     "img": [
-      "./picture/Yarsanfederationens_styrelse_2016.jpg"
+      "/assets/picture/Yarsanfederationens_styrelse_2016.jpg"
     ],
     "video": null,
     "poster": null,
@@ -70,7 +70,7 @@
     "id": "radio2011",
     "title": "Radio Sverige 2011",
     "img": [
-      "./picture/radioSverige_2011.jpg"
+      "/assets/picture/radioSverige_2011.jpg"
     ],
     "video": null,
     "poster": null,
@@ -84,7 +84,7 @@
     "id": "farhang2010",
     "title": "Balvashan Ensemble i samarbete med Yarsan Förbundet 2010",
     "img": [
-      "./picture/farhang_2010.jpg"
+      "/assets/picture/farhang_2010.jpg"
     ],
     "video": null,
     "poster": null,
@@ -98,7 +98,7 @@
     "id": "gisso2019",
     "title": "Folk och klasisk kurdisk och persisk musik 2019",
     "img": [
-      "./picture/uppsala_2019.jpg"
+      "/assets/picture/uppsala_2019.jpg"
     ],
     "video": null,
     "poster": null,
@@ -109,7 +109,7 @@
     "id": "goteborg2019",
     "title": "Inbjudan till Göteborgs Internationella Festival – 1 april 2019",
     "img": [
-      "./picture/göteborg_2019.jpg"
+      "/assets/picture/göteborg_2019.jpg"
     ],
     "video": null,
     "poster": null,
@@ -123,7 +123,7 @@
     "id": "balvashan2016",
     "title": "Balvashan Ensemble Concert – Uppsala 2016",
     "img": [
-      "./picture/uppsala_2016.jpg"
+      "/assets/picture/uppsala_2016.jpg"
     ],
     "video": null,
     "poster": null,
@@ -134,8 +134,8 @@
     "id": "sverigesRadio2023",
     "title": "Sveriges Radio i Stockholm-2023",
     "img": [
-      "./picture/SR_2023_1.jpg",
-      "./picture/SR_2023_2.jpg"
+      "/assets/picture/SR_2023_1.jpg",
+      "/assets/picture/SR_2023_2.jpg"
     ],
     "text": "Intervju med Sveriges Radio i Stockholm och samtal om framförandet av sången Shkobân till minne av Jina och revolutionen 'Kvinna, Liv, Frihet'. Denna konsert hölls tillägnad kvinnors frihet under en Europaturné och mottogs med stor entusiasm i Nederländerna, Belgien, Tyskland, Sverige, Norge och Finland.Datum för intervjun: Torsdag 6 april 2023, kl. 17:50.",
     "source": {
@@ -147,7 +147,7 @@
     "id": "worldMusicFestival2023",
     "title": "Jina (Mahsa) – Göteborg, april 2023",
     "img": [
-      "./picture/worldMusicFestival2023.jpg"
+      "/assets/picture/worldMusicFestival2023.jpg"
     ],
     "video": null,
     "poster": null,
@@ -161,7 +161,7 @@
     "id": "shokobanBryssel2023",
     "title": "Shkobân – Bryssel 2023",
     "img": [
-      "./picture/shokobanBryssel2023.jpg"
+      "/assets/picture/shokobanBryssel2023.jpg"
     ],
     "video": null,
     "poster": null,
@@ -172,7 +172,7 @@
     "id": "shokobanRotterdam2023",
     "title": "Shkobân – Rotterdam 2023",
     "img": [
-      "./picture/shokobanRotterdam2023.jpg"
+      "/assets/picture/shokobanRotterdam2023.jpg"
     ],
     "video": null,
     "poster": null,
@@ -183,7 +183,7 @@
     "id": "HonarOnline1",
     "title": "Bevis på erkännande i iranska medier (HonarOnline)",
     "img": [
-      "./picture/HonarOnline1.jpg"
+      "/assets/picture/HonarOnline1.jpg"
     ],
     "video": null,
     "poster": null,
@@ -197,7 +197,7 @@
     "id": "draVadiEshgh",
     "title": "dra-vadi-eshgh",
     "img": [
-      "./picture/dra-vadi-eshgh.jpg"
+      "/assets/picture/dra-vadi-eshgh.jpg"
     ],
     "video": null,
     "poster": null,
@@ -211,7 +211,7 @@
     "id": "penhanak1",
     "title": "penhanak",
     "img": [
-      "./picture/penhanak.jpg"
+      "/assets/picture/penhanak.jpg"
     ],
     "video": null,
     "poster": null,
@@ -225,7 +225,7 @@
     "id": "Penhanak2",
     "title": "Framgångsrik musikförsäljning (Jame Jam Online)",
     "img": [
-      "./picture/penhanak2.jpg"
+      "/assets/picture/penhanak2.jpg"
     ],
     "video": null,
     "poster": null,
@@ -239,7 +239,7 @@
     "id": "serre-hezar-sale",
     "title": "serre-hezar-sale Album",
     "img": [
-      "./picture/serre-hezar-sale.jpg"
+      "/assets/picture/serre-hezar-sale.jpg"
     ],
     "video": null,
     "poster": null,

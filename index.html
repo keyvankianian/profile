@@ -1,81 +1,79 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="sv">
-
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Migration-related media archive with articles, interviews and artistic performances."
-          name="description">
+<!doctype html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Migration-related media archive with articles, interviews and artistic performances."
+    />
     <title>Migration Documents</title>
-    <link href="style.css" rel="stylesheet"/>
-    <!--    <script async src="//www.instagram.com/embed.js"/>-->
-    <script defer src="script.js"></script>
-</head>
+  </head>
+  <body>
+    <header>
+      <span class="logo">Keyvan Kianian</span>
+      <h1 class="title">Profile</h1>
+    </header>
 
-<body>
-<header>
-    <span class="logo">Keyvan Kianian</span>
-    <h1 class="title">Profile</h1>
-</header>
-
-<div class="tabs-container">
-    <button class="sidebar-toggle" type="button">☰ All List</button>
-    <div class="tabs">
+    <div class="tabs-container">
+      <button class="sidebar-toggle" type="button">☰ All List</button>
+      <div class="tabs">
         <button class="tablink active" data-tab="artiklar" onclick="openTab('artiklar', this)">
-            Artiklar
+          Artiklar
         </button>
         <button class="tablink" data-tab="bilder" onclick="openTab('bilder', this)">
-            Bilder
+          Bilder
         </button>
         <button class="tablink" data-tab="Performance" onclick="openTab('Performance', this)">
-            Performance
+          Performance
         </button>
-        <button class="tablink" data-tab="interview"
-                onclick="openTab('interview', this)">
-            interview
+        <button class="tablink" data-tab="interview" onclick="openTab('interview', this)">
+          interview
         </button>
         <button class="tablink" data-tab="pdfs" onclick="openTab('pdfs', this)">
-            Dokuments
+          Dokuments
         </button>
+      </div>
     </div>
-</div>
-<div class="tabcontent active" id="artiklar">
-    <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-    </div>
-</div>
-<div class="tabcontent" id="bilder">
-    <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-    </div>
-</div>
-<div class="tabcontent" id="efter2023">
-    <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-    </div>
-</div>
-<div class="tabcontent" id="Performance">
-    <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-    </div>
-</div>
-<div class="tabcontent" id="interview">
-    <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-    </div>
-</div>
-<div class="tabcontent" id="pdfs">
-    <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-    </div>
-</div>
-<div class="overlay"></div>
-</body>
 
+    <div class="tabcontent active" id="artiklar">
+      <div class="tab-inner">
+        <aside class="sidebar"></aside>
+        <main class="content"></main>
+      </div>
+    </div>
+    <div class="tabcontent" id="bilder">
+      <div class="tab-inner">
+        <aside class="sidebar"></aside>
+        <main class="content"></main>
+      </div>
+    </div>
+    <div class="tabcontent" id="efter2023">
+      <div class="tab-inner">
+        <aside class="sidebar"></aside>
+        <main class="content"></main>
+      </div>
+    </div>
+    <div class="tabcontent" id="Performance">
+      <div class="tab-inner">
+        <aside class="sidebar"></aside>
+        <main class="content"></main>
+      </div>
+    </div>
+    <div class="tabcontent" id="interview">
+      <div class="tab-inner">
+        <aside class="sidebar"></aside>
+        <main class="content"></main>
+      </div>
+    </div>
+    <div class="tabcontent" id="pdfs">
+      <div class="tab-inner">
+        <aside class="sidebar"></aside>
+        <main class="content"></main>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
