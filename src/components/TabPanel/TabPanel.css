@@ -52,6 +52,16 @@
   box-shadow: var(--shadow-soft);
 }
 
+[dir='rtl'] .sidebar {
+  left: auto;
+  right: 0;
+  transform: translateX(100%);
+}
+
+[dir='rtl'] .sidebar.open {
+  transform: translateX(0);
+}
+
 .sidebar.open {
   transform: translateX(0);
 }
@@ -76,6 +86,10 @@
   text-align: left;
 }
 
+[dir='rtl'] .sidebar-link {
+  text-align: right;
+}
+
 .sidebar button.sidebar-link {
   border: none;
   background-color: rgba(255, 255, 255, 0.9);
@@ -88,6 +102,11 @@
   background-color: rgba(15, 23, 42, 0.08);
   border-color: rgba(15, 23, 42, 0.2);
   transform: translateX(2px);
+}
+
+[dir='rtl'] .sidebar-link:hover,
+[dir='rtl'] .sidebar-link.active-link {
+  transform: translateX(-2px);
 }
 
 .performance-item,

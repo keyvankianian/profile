@@ -16,6 +16,13 @@ header {
   box-shadow: var(--shadow-soft);
 }
 
+.title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 header .print-button {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
@@ -50,6 +57,38 @@ header .title {
   font-weight: 600;
   text-align: center;
   justify-self: center;
+}
+
+.language-switch {
+  display: inline-flex;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.1rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
+}
+
+.language-button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 0.35rem 0.65rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.language-button.active {
+  background: rgba(255, 255, 255, 0.85);
+  color: #0f172a;
+}
+
+.language-button:not(.active):hover,
+.language-button:not(.active):focus-visible {
+  background: rgba(255, 255, 255, 0.25);
+  outline: none;
 }
 
 .tabs-container {
@@ -142,6 +181,22 @@ header .title {
   color: white;
   border-color: var(--color-primary);
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.25);
+}
+
+[dir='rtl'] header {
+  direction: rtl;
+  grid-template-columns: auto 1fr auto;
+}
+
+[dir='rtl'] .tabs-container,
+[dir='rtl'] .tabs {
+  direction: rtl;
+}
+
+[dir='rtl'] .sidebar-toggle,
+[dir='rtl'] .tablink,
+[dir='rtl'] .print-button {
+  font-family: inherit;
 }
 
 @media (max-width: 600px) {
