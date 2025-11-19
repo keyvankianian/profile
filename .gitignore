@@ -1,27 +1,10 @@
-# IntelliJ IDEA
-.idea/
-.idea/*.*
-*.iml
-./Documents/
-./video/
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# node (فقط اگر یه روز npm install انجام دادی)
 node_modules/
+dist/
+.DS_Store
+Thumbs.db
 npm-debug.log*
-
-# VSCode (اگه باهاش هم باز شد)
-.vscode/
-
-# logs
 *.log
-
-# OS swap files / temp
-*.swp
 *.tmp
+*.swp
+.vscode/
+.idea/

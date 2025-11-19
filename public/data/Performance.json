@@ -24,7 +24,7 @@
     "id": "GudsSjuNamn",
     "title": "Musikverk om Guds sju namn (2025-02-07)",
     "img": [
-      "./picture/GudsSjuNamn.jpg"
+      "/assets/picture/GudsSjuNamn.jpg"
     ],
     "video": null,
     "poster": null,
@@ -49,7 +49,7 @@
     "id": "eurokurd2024",
     "title": "Euro kurd (2024-12-20)",
     "img": null,
-    "poster": "./picture/eurokurd2024.jpg",
+    "poster": "/assets/picture/eurokurd2024.jpg",
     "videoID": "q999bCIQ_3E",
     "text": "Samarbete mellan Balushan-gruppen, som jag själv leder, och Yarsan.",
     "source": {
@@ -61,10 +61,10 @@
     "id": "KurdiskaKulturFestivalen2024",
     "title": "Kurdiska Kultur Festivalen (2024-09-01)",
     "img": [
-      "./picture/Exilkonserter2024_1.jpg"
+      "/assets/picture/Exilkonserter2024_1.jpg"
     ],
-    "video": "./video/KurdiskaKulturFestivalen2024.mp4",
-    "poster": "./video/KurdiskaKulturFestivalen2024.jpg",
+    "video": "/assets/video/KurdiskaKulturFestivalen2024.mp4",
+    "poster": "/assets/video/KurdiskaKulturFestivalen2024.jpg",
     "text": "Exilkonserter – Jag och Yaran-gruppen har alltid, trots de risker det innebär för mig, stått med musikens röst för kvinnors frihet och kampen mot förtrycket av kvinnors röster i Iran.",
     "source": null
   },
@@ -82,7 +82,7 @@
   {
     "id": "minneAvJina_4",
     "title": "Minne av Jina Helsinki (2023-04-22)",
-    "img": ["./picture/minneAvJina_4.jpg"],
+    "img": ["/assets/picture/minneAvJina_4.jpg"],
     "text": "Ett av mina verk på sociala medier har haft över 96 000 visningar, och flera andra har också fått stor spridning. Det visar att mina aktiviteter är mycket synliga. Därför är risken stor för mig i Iran eftersom de innehåller kritik mot regimen och handlar om frihet och kvinnors rättigheter",
     "source": {
       "label": "Instagram",
@@ -93,7 +93,7 @@
     "id": "shokobanHelsingfors2023",
     "title": "'Shkobān' i Helsingfors (2023-04-22)",
     "img": [
-      "./picture/shokobanHelsingfors2023.jpg"
+      "/assets/picture/shokobanHelsingfors2023.jpg"
     ],
     "videoID": "dys18vpptYE",
     "text": "Några månader efter revolutionen Kvinna, Liv, Frihet höll jag en konsert till minne av revolutionens martyrer den 22 april 2023 i Helsingfors, Finland. Denna föreställning genomfördes trots allvarliga hot från den iranska regimen, i stöd för frihet och rättvisa.",
@@ -129,8 +129,8 @@
     "title": "Minne av Jina Stockholm 2 (2023-04-08)",
     "img": null,
     "videoID": null,
-    "poster": "./video/minneAvJina_2.jpg",
-    "video": "./video/minneAvJina_2.mp4",
+    "poster": "/assets/video/minneAvJina_2.jpg",
+    "video": "/assets/video/minneAvJina_2.mp4",
     "text": "<p>\n  Detta musikstycke framfördes av mig och min musikgrupp under vår Europaturné, några månader efter Jina-revolutionen. Verket är baserat på en gammal och profetisk dikt av Shah Khoshin, en andlig ledare inom Yarsan-tron, och har återtolkats med tanke på dagens situation i Iran. Texterna uttrycker tydligt folkets uppror, regimens förtryck, religiös diskriminering och hopp om frihet och rättvisa. Med denna musik har vi inte bara uttryckt vår kulturella och religiösa identitet, utan också gjort en tydlig politisk markering mot diktatur och religiös förföljelse. Detta är både en andlig handling och en fredlig protest – ett sätt att stå upp för vår tro och visa stöd för det iranska folkets kamp.\n</p>\n\n<p>\n  Hela Iran är omgivet av sorg, och de kloka vet detta.<br>\n  Landets alla hörn är fyllda av sorg som drabbar alla.<br>\n  Folket har rest sig, och i städerna råder uppror.<br>\n  Detta har en vis man, Shah Khoshin, sagt.<br>\n  I denna tid, när ingenting är gott,<br>\n  är bergen fyllda av ormar och slätterna av ryttare.<br>\n  Vi kan luta oss mot ormarna, men aldrig mot ryttarna och spjutbärarna.<br>\n  För oss är ormens gift bättre än spjutens hot.<br>\n  Vi är beredda att söka skydd hos ormen, men aldrig ge vår heder åt dem.<br>\n  Från Sham till Aleppo, och från Balkh till Bukhara råder uppror.<br>\n  Även kring Kina och västerländska länder finns oro.<br>\n  Överallt ljuder krigets horn.<br>\n  I Iran dödas tusentals unga,<br>\n  och i religionens namn spills blod och landet fylls av oro.<br>\n  Till slut måste vi tro: folket kommer att segra<br>\n  och världen kommer att nå fred och ro.<br>\n  <em>Poet: Khan Almas</em>\n</p>\n",
     "source": {
       "label": "Youtube",
@@ -164,11 +164,11 @@
     "id": "goteborg2022",
     "title": "World music festival Göteborg 2022",
     "img": [
-      "./picture/göteborg_2022.jpg"
+      "/assets/picture/göteborg_2022.jpg"
     ],
     "video": [
-      "./video/goteborg_2022_1.mp4",
-      "./video/goteborg_2022_2.mp4"
+      "/assets/video/goteborg_2022_1.mp4",
+      "/assets/video/goteborg_2022_2.mp4"
     ],
     "poster": null,
     "text": "Den 2 april 2022 skedde ett distansdeltagande i Göteborgs Musikfestival. Framträdandet genomfördes underjordiskt i Iran med sångerskan Nova Piri. Trots restriktioner och risker för kvinnor inom musik i Iran gjordes en insats för att stödja kvinnors röster och skapa konstnärliga möjligheter för dem. Denna konsert var ett uttryck för engagemanget för yttrandefrihet inom musik och stöd för kvinnliga artister, trots systematiska hot och förtryck i Iran.",
