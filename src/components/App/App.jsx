@@ -42,11 +42,19 @@ const App = () => {
   const toggleSidebar = () => setSidebarOpen((prev) => !prev);
   const closeSidebar = () => setSidebarOpen(false);
 
+  const handlePrint = () => {
+    if (typeof window === 'undefined') return;
+    window.print();
+  };
+
   return (
     <>
       <header>
         <span className="logo">Keyvan Kianian</span>
         <h1 className="title">Profile</h1>
+        <button type="button" className="print-button" onClick={handlePrint}>
+          Print page
+        </button>
       </header>
 
       <div className="tabs-container">
