@@ -7,7 +7,8 @@
   border-radius: 1rem;
   margin-bottom: 0.75rem;
   max-height: 70vh;
-  object-fit: cover;
+  object-fit: contain;
+  background: rgba(15, 23, 42, 0.06);
   box-shadow: var(--shadow-soft);
 }
 
