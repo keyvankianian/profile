@@ -201,6 +201,21 @@ header .title {
   scroll-margin-top: 20vh;
 }
 
+.text-content {
+  margin: 1rem 0;
+}
+
+.media-placeholder {
+  border: 0.125rem dashed #ccd6f6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: #004080;
+  background-color: #f9fbff;
+  font-weight: 600;
+}
+
 video,
 img,
 iframe {
