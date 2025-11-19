@@ -1,11 +1,16 @@
 import './SourceAttribution.css';
 
-const SourceAttribution = ({ source }) => {
+const fallbackStrings = { sourceLabel: 'Källa' };
+
+const SourceAttribution = ({ source, language, strings }) => {
   if (!source?.url) return null;
 
+  const copy = strings || fallbackStrings;
+  const direction = language === 'fa' ? 'rtl' : 'ltr';
+
   return (
-    <p className="source">
-      <strong>{source.label || 'Källa'}:</strong>{' '}
+    <p className="source" dir={direction}>
+      <strong>{source.label || copy.sourceLabel}:</strong>{' '}
       <a href={source.url} target="_blank" rel="noreferrer">
         {source.url}
       </a>

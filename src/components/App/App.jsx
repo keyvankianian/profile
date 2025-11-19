@@ -4,15 +4,56 @@ import './App.css';
 
 const DATA_BASE_PATH = './data';
 const ACTIVE_TAB_KEY = 'activeTab';
+const LANGUAGE_KEY = 'language';
 const DEFAULT_TAB = 'Performance';
+const DEFAULT_LANGUAGE = 'sv';
 
 const tabs = [
-  { id: 'artiklar', label: 'Artiklar', dataPath: `${DATA_BASE_PATH}/artiklar.json` },
-  { id: 'bilder', label: 'Bilder', dataPath: `${DATA_BASE_PATH}/bilder.json` },
-  { id: 'Performance', label: 'Performance', dataPath: `${DATA_BASE_PATH}/Performance.json` },
-  { id: 'interview', label: 'Interview', dataPath: `${DATA_BASE_PATH}/interview.json` },
-  { id: 'pdfs', label: 'Dokuments', dataPath: `${DATA_BASE_PATH}/pdfs.json` }
+  {
+    id: 'artiklar',
+    label: { sv: 'Artiklar', fa: 'مقالات' },
+    dataPath: { sv: `${DATA_BASE_PATH}/artiklar.json`, fa: `${DATA_BASE_PATH}/artiklar.json` }
+  },
+  {
+    id: 'bilder',
+    label: { sv: 'Bilder', fa: 'تصاویر' },
+    dataPath: { sv: `${DATA_BASE_PATH}/bilder.json`, fa: `${DATA_BASE_PATH}/bilder.json` }
+  },
+  {
+    id: 'Performance',
+    label: { sv: 'Performance', fa: 'اجراها' },
+    dataPath: { sv: `${DATA_BASE_PATH}/Performance.json`, fa: `${DATA_BASE_PATH}/Performance.json` }
+  },
+  {
+    id: 'interview',
+    label: { sv: 'Interview', fa: 'مصاحبه‌ها' },
+    dataPath: { sv: `${DATA_BASE_PATH}/interview.json`, fa: `${DATA_BASE_PATH}/interview.json` }
+  },
+  {
+    id: 'pdfs',
+    label: { sv: 'Dokuments', fa: 'اسناد' },
+    dataPath: { sv: `${DATA_BASE_PATH}/pdfs.json`, fa: `${DATA_BASE_PATH}/pdfs.json` }
+  }
 ];
+
+const translations = {
+  sv: {
+    logo: 'Keyvan Kianian',
+    title: 'Profil',
+    printButton: 'Skriv ut sidan',
+    allList: '☰ Alla listor',
+    languageLabel: 'Välj språk',
+    languageNames: { sv: 'Svenska', fa: 'فارسی' }
+  },
+  fa: {
+    logo: 'کیوان کیانیان',
+    title: 'پروفایل',
+    printButton: 'چاپ صفحه',
+    allList: '☰ فهرست کامل',
+    languageLabel: 'انتخاب زبان',
+    languageNames: { sv: 'سوئدی', fa: 'فارسی' }
+  }
+};
 
 const App = () => {
   const [activeTab, setActiveTab] = useState(() => {
@@ -22,12 +63,27 @@ const App = () => {
     const saved = localStorage.getItem(ACTIVE_TAB_KEY);
     return tabs.some((tab) => tab.id === saved) ? saved : DEFAULT_TAB;
   });
+  const [language, setLanguage] = useState(() => {
+    if (typeof window === 'undefined') return DEFAULT_LANGUAGE;
+    const saved = localStorage.getItem(LANGUAGE_KEY);
+    if (saved && translations[saved]) return saved;
+    if (typeof navigator !== 'undefined' && navigator.language?.startsWith('fa')) return 'fa';
+    return DEFAULT_LANGUAGE;
+  });
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     localStorage.setItem(ACTIVE_TAB_KEY, activeTab);
   }, [activeTab]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    localStorage.setItem(LANGUAGE_KEY, language);
+    document.documentElement.lang = language;
+    document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
+    document.body.dir = language === 'fa' ? 'rtl' : 'ltr';
+  }, [language]);
 
   useEffect(() => {
     document.body.classList.toggle('sidebar-open', sidebarOpen);
@@ -47,19 +103,40 @@ const App = () => {
     window.print();
   };
 
+  const handleLanguageChange = (nextLanguage) => {
+    if (!translations[nextLanguage]) return;
+    setLanguage(nextLanguage);
+  };
+
+  const localizedStrings = translations[language] ?? translations[DEFAULT_LANGUAGE];
+
   return (
     <>
       <header>
-        <span className="logo">Keyvan Kianian</span>
-        <h1 className="title">Profile</h1>
+        <span className="logo">{localizedStrings.logo}</span>
+        <div className="title-group">
+          <h1 className="title">{localizedStrings.title}</h1>
+          <div className="language-switch" aria-label={localizedStrings.languageLabel}>
+            {Object.keys(translations).map((langKey) => (
+              <button
+                key={langKey}
+                type="button"
+                className={`language-button ${language === langKey ? 'active' : ''}`}
+                onClick={() => handleLanguageChange(langKey)}
+              >
+                {localizedStrings.languageNames[langKey] ?? langKey.toUpperCase()}
+              </button>
+            ))}
+          </div>
+        </div>
         <button type="button" className="print-button" onClick={handlePrint}>
-          Print page
+          {localizedStrings.printButton}
         </button>
       </header>
 
       <div className="tabs-container">
         <button className="sidebar-toggle" type="button" onClick={toggleSidebar}>
-          ☰ All List
+          {localizedStrings.allList}
         </button>
         <div className="tabs">
           {tabs.map((tab) => (
@@ -69,7 +146,9 @@ const App = () => {
               className={`tablink ${tab.id === activeTab ? 'active' : ''}`}
               onClick={() => handleTabClick(tab.id)}
             >
-              {tab.label}
+              {typeof tab.label === 'string'
+                ? tab.label
+                : tab.label[language] || tab.label[DEFAULT_LANGUAGE]}
             </button>
           ))}
         </div>
@@ -82,6 +161,7 @@ const App = () => {
           isActive={tab.id === activeTab}
           isSidebarOpen={sidebarOpen}
           closeSidebar={closeSidebar}
+          language={language}
         />
       ))}
 

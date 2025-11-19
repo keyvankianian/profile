@@ -12,15 +12,23 @@ const buildPdfSrc = (src) => {
   return `${base}#${params.toString()}`;
 };
 
-const PdfViewer = ({ item }) => {
+const fallbackStrings = {
+  choosePdf: 'Välj ett dokument från listan för att visa det här.',
+  openPdfInNewTab: 'Öppna dokumentet i en ny flik'
+};
+
+const PdfViewer = ({ item, language, strings }) => {
+  const copy = strings || fallbackStrings;
+  const direction = language === 'fa' ? 'rtl' : 'ltr';
+
   if (!item) {
-    return <p>Välj ett dokument från listan för att visa det här.</p>;
+    return <p>{copy.choosePdf}</p>;
   }
 
   const pdfSrc = buildPdfSrc(item.pdf);
 
   return (
-    <article className="performance-item pdf-panel" id={item.id}>
+    <article className="performance-item pdf-panel" id={item.id} dir={direction}>
       <h2>{item.title}</h2>
       {item.caption && <p>{item.caption}</p>}
       {item.pdf && (
@@ -29,7 +37,7 @@ const PdfViewer = ({ item }) => {
       {item.pdf && (
         <p>
           <a href={item.pdf} target="_blank" rel="noreferrer">
-            Öppna dokumentet i en ny flik
+            {copy.openPdfInNewTab}
           </a>
         </p>
       )}

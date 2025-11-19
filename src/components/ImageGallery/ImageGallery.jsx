@@ -1,7 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 import './ImageGallery.css';
 
-const ImageGallery = ({ images, title }) => {
+const fallbackStrings = {
+  galleryImageAlt: (itemTitle, index) => `${itemTitle || 'Gallery'} – bild ${index}`,
+  galleryPreviewAlt: (itemTitle, index) => `${itemTitle || 'Gallery'} – förhandsvisning ${index}`
+};
+
+const ImageGallery = ({ images, title, language, strings }) => {
   const normalized = useMemo(() => {
     if (!images) return [];
     if (Array.isArray(images)) return images.filter(Boolean);
@@ -16,10 +21,16 @@ const ImageGallery = ({ images, title }) => {
   if (!normalized.length) return null;
 
   const activeImage = normalized[Math.min(activeIndex, normalized.length - 1)];
+  const copy = strings || fallbackStrings;
 
   return (
     <figure className="image-gallery">
-      <img src={activeImage} alt={`${title || 'Gallery'} – bild ${activeIndex + 1}`} className="main-image" />
+      <img
+        src={activeImage}
+        alt={copy.galleryImageAlt?.(title, activeIndex + 1) || `${title || 'Gallery'} – bild ${activeIndex + 1}`}
+        className="main-image"
+        dir={language === 'fa' ? 'rtl' : 'ltr'}
+      />
       {normalized.length > 1 && (
         <div className="thumbnail-row" role="list">
           {normalized.map((src, index) => (
@@ -27,7 +38,9 @@ const ImageGallery = ({ images, title }) => {
               key={src}
               role="listitem"
               src={src}
-              alt={`${title || 'Gallery'} – förhandsvisning ${index + 1}`}
+              alt={
+                copy.galleryPreviewAlt?.(title, index + 1) || `${title || 'Gallery'} – förhandsvisning ${index + 1}`
+              }
               className={`thumbnail ${index === activeIndex ? 'selected' : ''}`}
               onClick={() => setActiveIndex(index)}
             />
