@@ -52,7 +52,11 @@ const useScrollSpy = (ids = [], options = {}, enabled = true) => {
   const { rootMargin = '-45% 0px -45% 0px', threshold = 0.1 } = options;
 
   useEffect(() => {
-    if (!enabled || typeof window === 'undefined') {
+    if (
+      !enabled ||
+      typeof window === 'undefined' ||
+      typeof window.IntersectionObserver === 'undefined'
+    ) {
       setActiveId(null);
       return undefined;
     }
@@ -63,7 +67,7 @@ const useScrollSpy = (ids = [], options = {}, enabled = true) => {
       return undefined;
     }
 
-    const observer = new IntersectionObserver(
+    const observer = new window.IntersectionObserver(
       (entries) => {
         const intersecting = entries.filter((entry) => entry.isIntersecting);
         if (intersecting.length) {
