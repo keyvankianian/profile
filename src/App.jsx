@@ -1,0 +1,181 @@
+import { useEffect, useMemo, useState } from 'react';
+
+const DATA_BASE_PATH = '/data';
+const ACTIVE_TAB_KEY = 'activeTab';
+const DEFAULT_TAB = 'Performance';
+
+const tabs = [
+  { id: 'artiklar', label: 'Artiklar', dataPath: `${DATA_BASE_PATH}/artiklar.json` },
+  { id: 'bilder', label: 'Bilder', dataPath: `${DATA_BASE_PATH}/bilder.json` },
+  { id: 'Performance', label: 'Performance', dataPath: `${DATA_BASE_PATH}/Performance.json` },
+  { id: 'interview', label: 'Interview', dataPath: `${DATA_BASE_PATH}/interview.json` },
+  { id: 'pdfs', label: 'Dokuments', dataPath: `${DATA_BASE_PATH}/pdfs.json` }
+];
+
+const useJsonData = (path) => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    setLoading(true);
+    setError(null);
+
+    fetch(path, { signal: controller.signal })
+      .then((res) => {
+        if (!res.ok) throw new Error(`Failed to load ${path}`);
+        return res.json();
+      })
+      .then((json) => {
+        setData(Array.isArray(json) ? json : []);
+        setLoading(false);
+      })
+      .catch((err) => {
+        if (err.name === 'AbortError') return;
+        setError(err);
+        setLoading(false);
+      });
+
+    return () => controller.abort();
+  }, [path]);
+
+  return { data, loading, error };
+};
+
+const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar }) => {
+  const { data, loading, error } = useJsonData(tab.dataPath);
+  const items = useMemo(() => (Array.isArray(data) ? data : []), [data]);
+
+  return (
+    <section id={tab.id} className={`tabcontent ${isActive ? 'active' : ''}`} aria-hidden={!isActive}>
+      <div className="tab-inner">
+        <aside className={`sidebar ${isActive && isSidebarOpen ? 'open' : ''}`}>
+          {loading && <p>Loading list…</p>}
+          {error && <p role="alert">Failed to load content.</p>}
+          {!loading && !error && (
+            <nav>
+              {items.map((item, index) => {
+                const itemId = item.id || `${tab.id}-${index}`;
+                return (
+                  <a key={itemId} href={`#${itemId}`} onClick={closeSidebar}>
+                    {item.title || `Item ${index + 1}`}
+                  </a>
+                );
+              })}
+            </nav>
+          )}
+        </aside>
+        <main className="content">
+          {loading && <p>Loading content…</p>}
+          {error && <p role="alert">Could not render {tab.label} just yet.</p>}
+          {!loading && !error &&
+            items.map((item, index) => {
+              const itemId = item.id || `${tab.id}-${index}`;
+              return (
+                <article key={itemId} id={itemId} className="performance-item">
+                  <h2>{item.title || 'Untitled entry'}</h2>
+                  {item.text && (
+                    <div className="text-content" dangerouslySetInnerHTML={{ __html: item.text }} />
+                  )}
+                  {(item.img || item.image) && (
+                    <div className="media-placeholder" aria-label="Image placeholder">
+                      Image placeholder
+                    </div>
+                  )}
+                  {(item.video || item.videoID || item.poster) && (
+                    <div className="media-placeholder" aria-label="Video placeholder">
+                      Video placeholder
+                    </div>
+                  )}
+                  {item.pdf && (
+                    <div className="media-placeholder" aria-label="PDF placeholder">
+                      PDF preview placeholder
+                    </div>
+                  )}
+                  {item.source?.url && (
+                    <p>
+                      <strong>Källa:</strong>{' '}
+                      <a href={item.source.url} target="_blank" rel="noreferrer">
+                        {item.source.url}
+                      </a>
+                    </p>
+                  )}
+                </article>
+              );
+            })}
+        </main>
+      </div>
+    </section>
+  );
+};
+
+const App = () => {
+  const [activeTab, setActiveTab] = useState(() => {
+    if (typeof window === 'undefined') {
+      return DEFAULT_TAB;
+    }
+    const saved = localStorage.getItem(ACTIVE_TAB_KEY);
+    return tabs.some((tab) => tab.id === saved) ? saved : DEFAULT_TAB;
+  });
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    localStorage.setItem(ACTIVE_TAB_KEY, activeTab);
+  }, [activeTab]);
+
+  useEffect(() => {
+    document.body.classList.toggle('sidebar-open', sidebarOpen);
+    return () => document.body.classList.remove('sidebar-open');
+  }, [sidebarOpen]);
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+    setSidebarOpen(false);
+  };
+
+  const toggleSidebar = () => setSidebarOpen((prev) => !prev);
+  const closeSidebar = () => setSidebarOpen(false);
+
+  return (
+    <>
+      <header>
+        <span className="logo">Keyvan Kianian</span>
+        <h1 className="title">Profile</h1>
+      </header>
+
+      <div className="tabs-container">
+        <button className="sidebar-toggle" type="button" onClick={toggleSidebar}>
+          ☰ All List
+        </button>
+        <div className="tabs">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              className={`tablink ${tab.id === activeTab ? 'active' : ''}`}
+              onClick={() => handleTabClick(tab.id)}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {tabs.map((tab) => (
+        <TabPanel
+          key={tab.id}
+          tab={tab}
+          isActive={tab.id === activeTab}
+          isSidebarOpen={sidebarOpen}
+          closeSidebar={closeSidebar}
+        />
+      ))}
+
+      <div className={`overlay ${sidebarOpen ? 'show' : ''}`} onClick={closeSidebar}></div>
+    </>
+  );
+};
+
+export default App;

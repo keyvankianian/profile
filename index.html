@@ -10,70 +10,7 @@
     <title>Migration Documents</title>
   </head>
   <body>
-    <header>
-      <span class="logo">Keyvan Kianian</span>
-      <h1 class="title">Profile</h1>
-    </header>
-
-    <div class="tabs-container">
-      <button class="sidebar-toggle" type="button">☰ All List</button>
-      <div class="tabs">
-        <button class="tablink active" data-tab="artiklar" onclick="openTab('artiklar', this)">
-          Artiklar
-        </button>
-        <button class="tablink" data-tab="bilder" onclick="openTab('bilder', this)">
-          Bilder
-        </button>
-        <button class="tablink" data-tab="Performance" onclick="openTab('Performance', this)">
-          Performance
-        </button>
-        <button class="tablink" data-tab="interview" onclick="openTab('interview', this)">
-          interview
-        </button>
-        <button class="tablink" data-tab="pdfs" onclick="openTab('pdfs', this)">
-          Dokuments
-        </button>
-      </div>
-    </div>
-
-    <div class="tabcontent active" id="artiklar">
-      <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-      </div>
-    </div>
-    <div class="tabcontent" id="bilder">
-      <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-      </div>
-    </div>
-    <div class="tabcontent" id="efter2023">
-      <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-      </div>
-    </div>
-    <div class="tabcontent" id="Performance">
-      <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-      </div>
-    </div>
-    <div class="tabcontent" id="interview">
-      <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-      </div>
-    </div>
-    <div class="tabcontent" id="pdfs">
-      <div class="tab-inner">
-        <aside class="sidebar"></aside>
-        <main class="content"></main>
-      </div>
-    </div>
-    <div class="overlay"></div>
-
-    <script type="module" src="/src/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
