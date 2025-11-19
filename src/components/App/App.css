@@ -1,8 +1,8 @@
 header {
   background-color: #004080;
   color: white;
-  line-height: 1;
-  padding: 1.25rem;
+  line-height: 1.2;
+  padding: 0.75rem clamp(1rem, 4vw, 2.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,30 +11,37 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
+  min-height: var(--header-height);
+  gap: 0.5rem;
 }
 
 header .logo {
   position: absolute;
-  left: 1.25rem;
-  font-size: 1rem;
+  left: clamp(1rem, 4vw, 2.5rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 header .title {
-  font-size: 1.75rem;
+  font-size: clamp(1.25rem, 4vw, 1.9rem);
   margin: 0;
 }
 
 .tabs-container {
   position: fixed;
-  top: 4.3rem;
+  top: var(--header-height);
   left: 0;
   right: 0;
   background-color: #f9f9f9;
   z-index: 999;
-  padding: 1rem 0.625rem;
+  padding: 0.75rem clamp(0.75rem, 4vw, 1.5rem);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.625rem;
+  gap: 0.75rem;
+  min-height: var(--tabs-height);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
 }
 
 .sidebar-toggle {
@@ -42,8 +49,9 @@ header .title {
   color: #fff;
   border: none;
   padding: 0.5rem 0.75rem;
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .overlay {
@@ -52,10 +60,11 @@ header .title {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.55);
   display: none;
   z-index: 1000;
   pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .overlay.show {
@@ -65,10 +74,20 @@ header .title {
 
 .tabs {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   flex: 1;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-bottom: 0.125rem solid #ccc;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  min-width: 0;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .tablink {
@@ -76,13 +95,15 @@ header .title {
   border: 1px solid #ccc;
   border-bottom: none;
   border-radius: 0.375rem 0.375rem 0 0;
-  padding: 0.375rem 0.75rem;
-  margin: 0 0.25rem;
-  font-weight: bold;
+  padding: 0.5rem clamp(0.5rem, 2vw, 1rem);
+  font-weight: 600;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
   color: #004080;
   cursor: pointer;
-  box-shadow: 0 -0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 -0.125rem 0.3125rem rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .tablink:hover {
@@ -96,15 +117,44 @@ header .title {
   box-shadow: none;
 }
 
-@media (max-width: 768px) {
-  .tablink {
-    font-size: 0.75rem;
-    padding: 0.375rem;
-    flex: 1 0 30%;
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
     text-align: center;
   }
 
+  header .logo {
+    position: static;
+  }
+
+  .tabs-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .tabs {
-    padding-top: 0;
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .sidebar-toggle {
+    display: none;
+  }
+
+  .tabs-container {
+    flex-wrap: nowrap;
+  }
+
+  .tabs {
+    justify-content: center;
+    border-bottom: 0.125rem solid #ccc;
+  }
+
+  .overlay {
+    display: none !important;
+    pointer-events: none;
   }
 }

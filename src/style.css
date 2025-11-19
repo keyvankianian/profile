@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-height: 4.5rem;
+  --tabs-height: 3.75rem;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --header-height: 5.25rem;
+    --tabs-height: 4.25rem;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +31,12 @@ body {
 
 body.sidebar-open {
   overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  body.sidebar-open {
+    overflow: auto;
+  }
 }
 
 @media (max-width: 768px) {
