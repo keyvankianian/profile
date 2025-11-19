@@ -43,6 +43,58 @@ const useJsonData = (path) => {
   return { data, loading, error };
 };
 
+const useScrollSpy = (ids = [], options = {}, enabled = true) => {
+  const [activeId, setActiveId] = useState(null);
+  const { rootMargin = '-45% 0px -45% 0px', threshold = 0.1 } = options;
+
+  useEffect(() => {
+    if (!enabled || typeof window === 'undefined') {
+      setActiveId(null);
+      return undefined;
+    }
+
+    const validIds = ids.filter(Boolean);
+    if (!validIds.length) {
+      setActiveId(null);
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const intersecting = entries.filter((entry) => entry.isIntersecting);
+        if (intersecting.length) {
+          intersecting.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          setActiveId(intersecting[0].target.id);
+          return;
+        }
+
+        const closest = entries.reduce(
+          (acc, entry) => {
+            const offset = Math.abs(entry.boundingClientRect.top);
+            if (offset < acc.offset) {
+              return { id: entry.target.id, offset };
+            }
+            return acc;
+          },
+          { id: null, offset: Number.POSITIVE_INFINITY }
+        );
+
+        setActiveId(closest.id);
+      },
+      { rootMargin, threshold }
+    );
+
+    validIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [enabled, rootMargin, threshold, ids.join('|')]);
+
+  return activeId;
+};
+
 const ImageGallery = ({ images, title }) => {
   const normalized = useMemo(() => {
     if (!images) return [];
@@ -158,6 +210,8 @@ const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar }) => {
   const items = useMemo(() => (Array.isArray(data) ? data : []), [data]);
   const [selectedPdfId, setSelectedPdfId] = useState(null);
   const isPdfTab = tab.id === 'pdfs';
+  const itemIds = useMemo(() => items.map((item, index) => item.id || `${tab.id}-${index}`), [items, tab.id]);
+  const activeSectionId = useScrollSpy(itemIds, undefined, isActive && !isPdfTab);
 
   useEffect(() => {
     if (!isPdfTab) return;
@@ -203,8 +257,9 @@ const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar }) => {
                   );
                 }
 
+                const linkClass = `sidebar-link ${activeSectionId === itemId ? 'active-link' : ''}`;
                 return (
-                  <a key={itemId} href={`#${itemId}`} onClick={closeSidebar}>
+                  <a key={itemId} href={`#${itemId}`} className={linkClass} onClick={closeSidebar}>
                     {label}
                   </a>
                 );
@@ -221,7 +276,7 @@ const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar }) => {
                 <PdfViewer item={selectedPdf} />
               ) : (
                 items.map((item, index) => {
-                  const itemId = item.id || `${tab.id}-${index}`;
+                  const itemId = itemIds[index];
                   const galleryImages = item.img || item.image;
                   return (
                     <article key={itemId} id={itemId} className="performance-item">
