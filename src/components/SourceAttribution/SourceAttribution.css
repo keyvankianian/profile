@@ -1,3 +1,11 @@
 .source {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(15, 23, 42, 0.15);
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.source a {
+  font-weight: 600;
 }

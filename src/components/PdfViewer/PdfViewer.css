@@ -5,12 +5,15 @@
 .pdf-frame {
   width: 100%;
   max-width: 65rem;
-  height: 90vh;
+  min-height: clamp(60vh, 70vw, 85vh);
   border: none;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-soft);
+  background: #fff;
 }
 
 @media (max-width: 768px) {
   .pdf-frame {
-    height: 70vh;
+    min-height: 70vh;
   }
 }
