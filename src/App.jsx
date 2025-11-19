@@ -1,6 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 
-const DATA_BASE_PATH = `${import.meta.env.BASE_URL}data`;
+// Using a relative path keeps the JSON fetches working no matter if the app is served
+// from the domain root, a subdirectory (like GitHub Pages) or even directly from the
+// file system. `import.meta.env.BASE_URL` becomes problematic in those scenarios
+// because it is resolved at build-time only.
+const DATA_BASE_PATH = './data';
 const ACTIVE_TAB_KEY = 'activeTab';
 const DEFAULT_TAB = 'Performance';
 
