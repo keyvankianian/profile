@@ -3,9 +3,9 @@ header {
   color: white;
   line-height: 1.2;
   padding: 0.85rem clamp(1rem, 3vw, 2.5rem);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +17,6 @@ header {
 }
 
 header .print-button {
-  margin-left: auto;
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -28,6 +27,7 @@ header .print-button {
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
+  justify-self: end;
 }
 
 header .print-button:hover,
@@ -37,8 +37,7 @@ header .print-button:focus-visible {
 }
 
 header .logo {
-  position: absolute;
-  left: clamp(1rem, 4vw, 2.5rem);
+  justify-self: start;
   font-size: clamp(0.85rem, 2vw, 1rem);
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -49,6 +48,8 @@ header .title {
   font-size: clamp(1.5rem, 4vw, 2.4rem);
   margin: 0;
   font-weight: 600;
+  text-align: center;
+  justify-self: center;
 }
 
 .tabs-container {
@@ -145,18 +146,19 @@ header .title {
 
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     text-align: center;
     padding-top: 1rem;
   }
 
-  header .logo {
-    position: static;
+  header .logo,
+  header .title,
+  header .print-button {
+    justify-self: center;
   }
 
   header .print-button {
     width: 100%;
-    margin-left: 0;
   }
 
   .tabs-container {
