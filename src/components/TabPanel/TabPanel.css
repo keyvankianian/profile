@@ -173,7 +173,7 @@
   }
 
   [dir='rtl'] .tab-inner {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   [dir='rtl'] .sidebar {
