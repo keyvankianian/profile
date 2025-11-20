@@ -16,7 +16,7 @@ const ImageGallery = ({ images, title, language, strings }) => {
 
   useEffect(() => {
     setActiveIndex(0);
-  }, [normalized.length]);
+  }, [normalized]);
 
   if (!normalized.length) return null;
 
