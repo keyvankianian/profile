@@ -232,7 +232,7 @@
   }
 
   [dir='rtl'] .sidebar {
-    right: 0;
+    right: auto;
     left: auto;
   }
 }
