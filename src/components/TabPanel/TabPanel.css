@@ -32,14 +32,14 @@
 }
 
 .sidebar {
+  --sidebar-gap: clamp(0.75rem, 3vw, 1.5rem);
   background: rgba(255, 255, 255, 0.92);
   padding: 1rem;
   border-radius: var(--radius);
-  width: min(22rem, 85vw);
-  max-width: 90%;
+  width: min(22rem, calc(100vw - (var(--sidebar-gap) * 2)));
   position: fixed;
   top: calc(var(--header-height) + var(--tabs-height) + 0.75rem);
-  left: clamp(0.75rem, 3vw, 1.5rem);
+  inset-inline-start: var(--sidebar-gap);
   bottom: 0;
   flex-shrink: 0;
   transform: translateX(-100%);
@@ -53,8 +53,8 @@
 }
 
 [dir='rtl'] .sidebar {
-  left: auto;
-  right: clamp(0.75rem, 3vw, 1.5rem);
+  inset-inline-start: auto;
+  inset-inline-end: var(--sidebar-gap);
   transform: translateX(100%);
 }
 
