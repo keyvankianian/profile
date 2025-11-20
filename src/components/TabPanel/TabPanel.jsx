@@ -204,7 +204,7 @@ const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar, language }) => {
       dir={direction}
     >
       <div className="tab-inner">
-        <aside className={`sidebar ${isActive && isSidebarOpen ? 'open' : ''}`}>
+        <aside id={`sidebar-${tab.id}`} className={`sidebar ${isActive && isSidebarOpen ? 'open' : ''}`}>
           {loading && <p>{localizedText.loadingList}</p>}
           {error && <p role="alert">{localizedText.loadError}</p>}
           {!loading && !error && (

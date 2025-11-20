@@ -130,7 +130,13 @@ const App = () => {
       </header>
 
       <div className="tabs-container">
-        <button className="sidebar-toggle" type="button" onClick={toggleSidebar}>
+        <button
+          className="sidebar-toggle"
+          type="button"
+          aria-expanded={sidebarOpen}
+          aria-controls={`sidebar-${activeTab}`}
+          onClick={toggleSidebar}
+        >
           {localizedStrings.allList}
         </button>
         <div className="tabs">
