@@ -83,11 +83,7 @@
   text-decoration: none;
   transition: background-color 0.2s, border 0.2s, transform 0.2s;
   width: 100%;
-  text-align: left;
-}
-
-[dir='rtl'] .sidebar-link {
-  text-align: right;
+  text-align: start;
 }
 
 .sidebar button.sidebar-link {

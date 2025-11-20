@@ -186,11 +186,16 @@ header .title {
 [dir='rtl'] header {
   direction: rtl;
   grid-template-columns: auto 1fr auto;
+  justify-items: start;
 }
 
 [dir='rtl'] .title-group {
   align-items: flex-end;
   text-align: right;
+}
+
+[dir='rtl'] .language-switch {
+  flex-direction: row-reverse;
 }
 
 [dir='rtl'] .tabs-container,
