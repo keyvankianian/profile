@@ -2,7 +2,7 @@ header {
   background: linear-gradient(120deg, #0f172a, #1d3a8a);
   color: white;
   line-height: 1.2;
-  padding: 0.85rem clamp(1rem, 3vw, 2.5rem);
+  padding: 1.15rem clamp(1rem, 3vw, 2.5rem);
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -60,21 +60,27 @@ header .title {
 }
 
 .language-switch {
+  position: absolute;
+  top: 0.6rem;
+  inset-inline-end: clamp(1rem, 3vw, 2.5rem);
   display: inline-flex;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 999px;
-  padding: 0.1rem;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
+  padding: 0.05rem;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
+  gap: 0.15rem;
 }
 
 .language-button {
   background: transparent;
   color: white;
   border: none;
-  padding: 0.35rem 0.65rem;
-  font-weight: 700;
-  font-size: 0.85rem;
+  padding: 0.3rem 0.55rem;
+  font-weight: 800;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   border-radius: 999px;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -196,6 +202,8 @@ header .title {
 
 [dir='rtl'] .language-switch {
   flex-direction: row-reverse;
+  inset-inline-end: auto;
+  inset-inline-start: clamp(1rem, 3vw, 2.5rem);
 }
 
 [dir='rtl'] .tabs-container,
