@@ -45,7 +45,7 @@ const translations = {
     languageNames: { sv: 'SV', fa: 'FA' }
   },
   fa: {
-    title: 'Keyvan Kianian',
+    title: 'کیوان کیانیان',
     printButton: 'چاپ صفحه',
     allList: '☰ فهرست کامل',
     languageLabel: 'انتخاب زبان',
