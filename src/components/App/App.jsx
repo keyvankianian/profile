@@ -39,7 +39,7 @@ const tabs = [
 const translations = {
   sv: {
     title: 'Keyvan Kianian',
-    printButton: 'Skriv ut sidan',
+    printButton: 'Skriv ut',
     allList: '☰ Alla listor',
     languageLabel: 'Välj språk',
     languageNames: { sv: 'SV', fa: 'FA' }
