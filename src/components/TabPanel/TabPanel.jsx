@@ -67,9 +67,8 @@ const useJsonData = (path) => {
   return { data, loading, error };
 };
 
-const useScrollSpy = (ids = [], options = {}, enabled = true) => {
+const useScrollSpy = (ids = [], _options = {}, enabled = true) => {
   const [activeId, setActiveId] = useState(null);
-  const { rootMargin = '-45% 0px -45% 0px', threshold = 0.1 } = options;
 
   useEffect(() => {
     if (!enabled || typeof window === 'undefined') {
@@ -83,38 +82,57 @@ const useScrollSpy = (ids = [], options = {}, enabled = true) => {
       return undefined;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const intersecting = entries.filter((entry) => entry.isIntersecting);
-        if (intersecting.length) {
-          intersecting.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-          setActiveId(intersecting[0].target.id);
-          return;
-        }
+    let frameId = null;
 
-        const closest = entries.reduce(
-          (acc, entry) => {
-            const offset = Math.abs(entry.boundingClientRect.top);
-            if (offset < acc.offset) {
-              return { id: entry.target.id, offset };
-            }
-            return acc;
-          },
-          { id: null, offset: Number.POSITIVE_INFINITY }
-        );
+    const updateActiveId = () => {
+      const viewportHeight = window.innerHeight || 0;
+      const referencePoint = viewportHeight * 0.35;
+      const elements = validIds
+        .map((id) => document.getElementById(id))
+        .filter((el) => el && el.getBoundingClientRect);
 
-        setActiveId(closest.id);
-      },
-      { rootMargin, threshold }
-    );
+      if (!elements.length) {
+        setActiveId(null);
+        return;
+      }
 
-    validIds.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
+      const candidate = elements
+        .map((el) => {
+          const rect = el.getBoundingClientRect();
+          const visibleHeight = Math.max(0, Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0));
+          const distance = Math.abs(rect.top - referencePoint);
+          return {
+            id: el.id,
+            visibleHeight,
+            distance
+          };
+        })
+        .sort((a, b) => {
+          if (b.visibleHeight !== a.visibleHeight) return b.visibleHeight - a.visibleHeight;
+          return a.distance - b.distance;
+        })[0];
 
-    return () => observer.disconnect();
-  }, [enabled, rootMargin, threshold, ids.join('|')]);
+      setActiveId(candidate?.id || null);
+    };
+
+    const handleScroll = () => {
+      if (frameId) return;
+      frameId = window.requestAnimationFrame(() => {
+        frameId = null;
+        updateActiveId();
+      });
+    };
+
+    updateActiveId();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
+
+    return () => {
+      if (frameId) window.cancelAnimationFrame(frameId);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, [enabled, ids.join('|')]);
 
   return activeId;
 };
