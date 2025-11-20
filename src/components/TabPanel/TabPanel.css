@@ -171,6 +171,15 @@
   .sidebar.open {
     transform: none;
   }
+
+  [dir='rtl'] .tab-inner {
+    flex-direction: row-reverse;
+  }
+
+  [dir='rtl'] .sidebar {
+    right: 0;
+    left: auto;
+  }
 }
 
 @media print {
