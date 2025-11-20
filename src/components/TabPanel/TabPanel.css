@@ -12,15 +12,20 @@
 }
 
 .tab-inner {
+  --layout-gap: 1.5rem;
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: stretch;
-  gap: 1.5rem;
+  gap: var(--layout-gap);
   margin-top: 1.5rem;
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tabcontent[dir='rtl'] .tab-inner {
+  --layout-gap: clamp(0.75rem, 1.75vw, 1.35rem);
 }
 
 .content {
@@ -205,9 +210,14 @@
   }
 
   .tab-inner {
+    --layout-gap: 2.5rem;
     flex-direction: row;
     align-items: flex-start;
-    gap: 2.5rem;
+    gap: var(--layout-gap);
+  }
+
+  .tabcontent[dir='rtl'] .tab-inner {
+    --layout-gap: clamp(1rem, 1.6vw, 1.5rem);
   }
 
   .sidebar {
