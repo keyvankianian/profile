@@ -30,8 +30,8 @@
 
 .tabcontent[dir='rtl'] .tab-inner {
   --layout-gap: clamp(0.75rem, 1.75vw, 1.35rem);
-  max-width: 100%;
-  margin-inline: 0;
+  max-width: min(92vw, 105rem);
+  margin-inline: auto;
 }
 
 .content {
@@ -243,11 +243,12 @@
     transform: none;
   }
 
-  [dir='rtl'] .tab-inner {
-    flex-direction: row;
+  .tabcontent[dir='rtl'] .tab-inner {
+    flex-direction: row-reverse;
   }
 
-  [dir='rtl'] .sidebar {
+  .tabcontent[dir='rtl'] .sidebar {
+    transform: none;
     right: auto;
     left: auto;
   }
