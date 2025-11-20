@@ -38,16 +38,14 @@ const tabs = [
 
 const translations = {
   sv: {
-    logo: 'Keyvan Kianian',
-    title: 'Profil',
+    title: 'Keyvan Kianian',
     printButton: 'Skriv ut sidan',
     allList: '☰ Alla listor',
     languageLabel: 'Välj språk',
     languageNames: { sv: 'SV', fa: 'FA' }
   },
   fa: {
-    logo: 'کیوان کیانیان',
-    title: 'پروفایل',
+    title: 'Keyvan Kianian',
     printButton: 'چاپ صفحه',
     allList: '☰ فهرست کامل',
     languageLabel: 'انتخاب زبان',
@@ -113,7 +111,9 @@ const App = () => {
   return (
     <>
       <header>
-        <span className="logo">{localizedStrings.logo}</span>
+        <button type="button" className="print-button" onClick={handlePrint}>
+          {localizedStrings.printButton}
+        </button>
         <div className="title-group">
           <h1 className="title">{localizedStrings.title}</h1>
           <div className="language-switch" aria-label={localizedStrings.languageLabel}>
@@ -129,7 +129,7 @@ const App = () => {
             ))}
           </div>
         </div>
-        <button type="button" className="print-button" onClick={handlePrint}>
+        <button type="button" className="print-button print-button--ghost" aria-hidden="true" tabIndex={-1}>
           {localizedStrings.printButton}
         </button>
       </header>
