@@ -11,6 +11,10 @@
   display: block;
 }
 
+.tabcontent[dir='rtl'] {
+  padding-inline: clamp(1rem, 3vw, 3.5rem);
+}
+
 .tab-inner {
   --layout-gap: 1.5rem;
   display: flex;
@@ -26,6 +30,8 @@
 
 .tabcontent[dir='rtl'] .tab-inner {
   --layout-gap: clamp(0.75rem, 1.75vw, 1.35rem);
+  max-width: 100%;
+  margin-inline: 0;
 }
 
 .content {
