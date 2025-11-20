@@ -4,7 +4,7 @@
 
 .pdf-frame {
   width: 100%;
-  max-width: 65rem;
+  max-width: 100%;
   min-height: clamp(60vh, 70vw, 85vh);
   border: none;
   border-radius: 1rem;
