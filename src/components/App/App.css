@@ -99,6 +99,22 @@ header .title {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+@media (max-width: 768px) {
+  .tabs-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sidebar-toggle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+}
+
 .sidebar-toggle {
   background: var(--color-primary);
   color: #fff;
