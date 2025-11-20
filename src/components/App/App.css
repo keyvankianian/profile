@@ -19,9 +19,10 @@ header {
 .title-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.35rem;
-  text-align: left;
+  text-align: center;
+  justify-self: center;
 }
 
 header .print-button {
@@ -35,7 +36,7 @@ header .print-button {
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
-  justify-self: end;
+  justify-self: left;
 }
 
 header .print-button:hover,
@@ -44,19 +45,18 @@ header .print-button:focus-visible {
   outline: none;
 }
 
-header .logo {
-  justify-self: start;
-  font-size: clamp(0.85rem, 2vw, 1rem);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.85);
-}
-
 header .title {
   font-size: clamp(1.5rem, 4vw, 2.4rem);
   margin: 0;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
+}
+
+.print-button--ghost {
+  visibility: hidden;
+  pointer-events: none;
+  user-select: none;
+  justify-self: right;
 }
 
 .language-switch {
@@ -192,12 +192,12 @@ header .title {
 [dir='rtl'] header {
   direction: rtl;
   grid-template-columns: auto 1fr auto;
-  justify-items: start;
+  justify-items: center;
 }
 
 [dir='rtl'] .title-group {
-  align-items: flex-end;
-  text-align: right;
+  align-items: center;
+  text-align: center;
 }
 
 [dir='rtl'] .language-switch {
@@ -224,10 +224,13 @@ header .title {
     padding-top: 1rem;
   }
 
-  header .logo,
   header .title,
   header .print-button {
     justify-self: center;
+  }
+
+  .print-button--ghost {
+    display: none;
   }
 
   header .print-button {
