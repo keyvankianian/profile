@@ -43,7 +43,7 @@ const translations = {
     printButton: 'Skriv ut sidan',
     allList: '☰ Alla listor',
     languageLabel: 'Välj språk',
-    languageNames: { sv: 'Svenska', fa: 'فارسی' }
+    languageNames: { sv: 'SV', fa: 'FA' }
   },
   fa: {
     logo: 'کیوان کیانیان',
@@ -51,7 +51,7 @@ const translations = {
     printButton: 'چاپ صفحه',
     allList: '☰ فهرست کامل',
     languageLabel: 'انتخاب زبان',
-    languageNames: { sv: 'سوئدی', fa: 'فارسی' }
+    languageNames: { sv: 'SV', fa: 'FA' }
   }
 };
 
