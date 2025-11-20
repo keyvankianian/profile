@@ -184,6 +184,18 @@ const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar, language }) => {
 
   const tabLabel = typeof tab.label === 'string' ? tab.label : tab.label[language] || tab.label.sv || tab.id;
 
+  const formatTitle = (value) => {
+    if (typeof value !== 'string' || language !== 'fa') return value;
+
+    const wrapLTR = (match) => `\u2066${match}\u2069`;
+    const patterns = [
+      /([0-9]{4}-[0-9]{2}-[0-9]{2})/g,
+      /([۰-۹]{4}-[۰-۹]{2}-[۰-۹]{2})/g
+    ];
+
+    return patterns.reduce((text, pattern) => text.replace(pattern, wrapLTR), value);
+  };
+
   return (
     <section
       id={tab.id}
@@ -199,7 +211,7 @@ const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar, language }) => {
             <nav>
               {items.map((item, index) => {
                 const itemId = item.id || `${tab.id}-${index}`;
-                const label = getLocalizedField(item, 'title') || `Item ${index + 1}`;
+                const label = formatTitle(getLocalizedField(item, 'title')) || `Item ${index + 1}`;
                 if (isPdfTab) {
                   return (
                     <button
@@ -237,7 +249,7 @@ const TabPanel = ({ tab, isActive, isSidebarOpen, closeSidebar, language }) => {
                 items.map((item, index) => {
                   const itemId = itemIds[index];
                   const galleryImages = item.img || item.image;
-                  const title = getLocalizedField(item, 'title');
+                  const title = formatTitle(getLocalizedField(item, 'title'));
                   const text = getLocalizedField(item, 'text');
                   return (
                     <article key={itemId} id={itemId} className="performance-item">
