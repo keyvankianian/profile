@@ -4,7 +4,7 @@ header {
   line-height: 1.2;
   padding: 1.15rem clamp(1rem, 3vw, 2.5rem);
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
   position: fixed;
   top: 0;
@@ -12,17 +12,8 @@ header {
   right: 0;
   z-index: 1000;
   min-height: var(--header-height);
-  gap: 0.75rem;
+  gap: 1rem;
   box-shadow: var(--shadow-soft);
-}
-
-.title-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-  text-align: center;
-  justify-self: center;
 }
 
 header .print-button {
@@ -36,7 +27,7 @@ header .print-button {
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.25);
-  justify-self: left;
+  justify-self: start;
 }
 
 header .print-button:hover,
@@ -50,19 +41,10 @@ header .title {
   margin: 0;
   font-weight: 600;
   text-align: center;
-}
-
-.print-button--ghost {
-  visibility: hidden;
-  pointer-events: none;
-  user-select: none;
-  justify-self: right;
+  justify-self: center;
 }
 
 .language-switch {
-  position: absolute;
-  top: 0.6rem;
-  inset-inline-end: clamp(1rem, 3vw, 2.5rem);
   display: inline-flex;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 999px;
@@ -70,6 +52,7 @@ header .title {
   background: rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
   gap: 0.15rem;
+  justify-self: end;
 }
 
 .language-button {
@@ -191,19 +174,12 @@ header .title {
 
 [dir='rtl'] header {
   direction: rtl;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   justify-items: center;
-}
-
-[dir='rtl'] .title-group {
-  align-items: center;
-  text-align: center;
 }
 
 [dir='rtl'] .language-switch {
   flex-direction: row-reverse;
-  inset-inline-end: auto;
-  inset-inline-start: clamp(1rem, 3vw, 2.5rem);
 }
 
 [dir='rtl'] .tabs-container,
@@ -220,17 +196,16 @@ header .title {
 @media (max-width: 600px) {
   header {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     text-align: center;
     padding-top: 1rem;
+    gap: 0.65rem;
   }
 
   header .title,
-  header .print-button {
+  header .print-button,
+  .language-switch {
     justify-self: center;
-  }
-
-  .print-button--ghost {
-    display: none;
   }
 
   header .print-button {

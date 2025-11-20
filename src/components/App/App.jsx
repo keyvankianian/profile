@@ -114,24 +114,19 @@ const App = () => {
         <button type="button" className="print-button" onClick={handlePrint}>
           {localizedStrings.printButton}
         </button>
-        <div className="title-group">
-          <h1 className="title">{localizedStrings.title}</h1>
-          <div className="language-switch" aria-label={localizedStrings.languageLabel}>
-            {Object.keys(translations).map((langKey) => (
-              <button
-                key={langKey}
-                type="button"
-                className={`language-button ${language === langKey ? 'active' : ''}`}
-                onClick={() => handleLanguageChange(langKey)}
-              >
-                {localizedStrings.languageNames[langKey] ?? langKey.toUpperCase()}
-              </button>
-            ))}
-          </div>
+        <h1 className="title">{localizedStrings.title}</h1>
+        <div className="language-switch" aria-label={localizedStrings.languageLabel}>
+          {Object.keys(translations).map((langKey) => (
+            <button
+              key={langKey}
+              type="button"
+              className={`language-button ${language === langKey ? 'active' : ''}`}
+              onClick={() => handleLanguageChange(langKey)}
+            >
+              {localizedStrings.languageNames[langKey] ?? langKey.toUpperCase()}
+            </button>
+          ))}
         </div>
-        <button type="button" className="print-button print-button--ghost" aria-hidden="true" tabIndex={-1}>
-          {localizedStrings.printButton}
-        </button>
       </header>
 
       <div className="tabs-container">
