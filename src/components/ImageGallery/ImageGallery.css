@@ -52,3 +52,21 @@
     border-radius: 1rem;
   }
 }
+
+@media print {
+  .image-gallery {
+    page-break-inside: avoid;
+  }
+
+  .main-image {
+    max-height: none;
+    background: transparent;
+    box-shadow: none;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .thumbnail-row {
+    display: none !important;
+  }
+}
