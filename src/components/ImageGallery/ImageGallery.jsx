@@ -31,6 +31,17 @@ const ImageGallery = ({ images, title, language, strings }) => {
         className="main-image"
         dir={language === 'fa' ? 'rtl' : 'ltr'}
       />
+      <div className="print-gallery" aria-hidden="true">
+        {normalized.map((src, index) => (
+          <img
+            key={`${src}-${index}`}
+            src={src}
+            alt={copy.galleryImageAlt?.(title, index + 1) || `${title || 'Gallery'} – bild ${index + 1}`}
+            className="print-image"
+            loading="eager"
+          />
+        ))}
+      </div>
       {normalized.length > 1 && (
         <div className="thumbnail-row" role="list">
           {normalized.map((src, index) => (
