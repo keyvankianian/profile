@@ -2,6 +2,10 @@
   margin: 1.25rem 0;
 }
 
+.print-gallery {
+  display: none;
+}
+
 .main-image {
   width: 100%;
   border-radius: 1rem;
@@ -59,11 +63,22 @@
   }
 
   .main-image {
-    max-height: none;
-    background: transparent;
+    display: none !important;
+  }
+
+  .print-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .print-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
     box-shadow: none;
-    display: block !important;
-    visibility: visible !important;
+    object-fit: contain;
+    background: transparent;
   }
 
   .thumbnail-row {
