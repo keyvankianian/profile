@@ -33,6 +33,11 @@ const tabs = [
     id: 'pdfs',
     label: { sv: 'Dokuments', fa: 'اسناد' },
     dataPath: { sv: `${DATA_BASE_PATH}/pdfs.json`, fa: `${DATA_BASE_PATH}/pdfs.fa.json` }
+  },
+  {
+    id: 'contact',
+    label: { sv: 'Kontakt', fa: 'ارتباط' },
+    dataPath: { sv: `${DATA_BASE_PATH}/contact.json`, fa: `${DATA_BASE_PATH}/contact.fa.json` }
   }
 ];
 
