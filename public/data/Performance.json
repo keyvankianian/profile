@@ -168,10 +168,7 @@
     "img": [
       "./assets/picture/göteborg_2022.jpg"
     ],
-    "video": [
-      "./assets/video/goteborg_2022_1.mp4",
-      "./assets/video/goteborg_2022_2.mp4"
-    ],
+    "videoID": "qg2-AwOsQSA",
     "poster": null,
     "text": "Den 2 april 2022 skedde ett distansdeltagande i Göteborgs Musikfestival. Framträdandet genomfördes underjordiskt i Iran med sångerskan Nova Piri. Trots restriktioner och risker för kvinnor inom musik i Iran gjordes en insats för att stödja kvinnors röster och skapa konstnärliga möjligheter för dem. Denna konsert var ett uttryck för engagemanget för yttrandefrihet inom musik och stöd för kvinnliga artister, trots systematiska hot och förtryck i Iran.",
     "source": {
