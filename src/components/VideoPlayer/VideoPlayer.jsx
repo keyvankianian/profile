@@ -32,10 +32,16 @@ const VideoPlayer = ({ videoID, video, poster, title, language, strings }) => {
       )}
 
       {normalizedVideos.map((src) => (
-        <video key={src} controls poster={poster || undefined} preload="metadata">
-          <source src={src} />
-          {copy.videoFallback}
-        </video>
+        <div className="video-wrapper" key={src}>
+          <video controls poster={poster || undefined} preload="metadata">
+            <source src={src} />
+            {copy.videoFallback}
+          </video>
+
+          {poster ? (
+            <img className="video-poster-print" src={poster} alt={copy.videoTitle?.(title)} />
+          ) : null}
+        </div>
       ))}
     </div>
   );
