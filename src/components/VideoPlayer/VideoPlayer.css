@@ -74,7 +74,9 @@
 
   .video-poster-print {
     display: block;
-    width: 100%;
+    width: 70%;
+    max-width: 640px;
+    margin: 0 auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 1rem;
