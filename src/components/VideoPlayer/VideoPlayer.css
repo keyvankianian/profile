@@ -61,6 +61,17 @@
     display: none;
   }
 
+  .video-container {
+    border: none;
+    box-shadow: none;
+  }
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    display: none;
+  }
+
   .video-poster-print {
     display: block;
     width: 100%;
