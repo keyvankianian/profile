@@ -6,7 +6,8 @@
 }
 
 .video-section video,
-.video-container {
+.video-container,
+.video-wrapper {
   border-radius: 1rem;
   overflow: hidden;
   border: 1px solid rgba(22, 35, 71, 0.08);
@@ -44,4 +45,27 @@
   height: min(60vh, 32rem);
   max-width: 100%;
   border: none;
+}
+
+.video-poster-print {
+  display: none;
+}
+
+@media print {
+  .video-wrapper {
+    border: none;
+    box-shadow: none;
+  }
+
+  .video-wrapper video {
+    display: none;
+  }
+
+  .video-poster-print {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
 }
