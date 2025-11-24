@@ -2,7 +2,7 @@
   {
     "id": "ShahrdadRohani",
     "title": "Konsert i Stockholm, med maestro Shahrdad Rohani (2025-05-17)",
-    "img": null,
+    "poster": "./assets/video/ShahrdadRohani.jpg",
     "videoID": "90EFCKvdDNY",
     "text": "<p>  Den 17 maj 2025 deltog jag och min dotter <strong>Kimia Kianian</strong> i en konsert i <strong>Stockholm</strong>, under ledning av <strong>maestro Shahrdad Rohani</strong>.<br>  Vi framförde ett stycke tillägnat vårt <strong>hemland</strong>, som en <strong>symbol för friheten att sjunga och spela musik</strong>.<br>  Detta framträdande var ett uttryck för <strong>konstnärlig frihet och motstånd mot censur och förtryck i Iran</strong>, och speglar vår väg som exilkonstnärer som kämpar för <strong>kvinnors kulturella och konstnärliga rättigheter</strong>.</p>",
     "source": {
@@ -13,6 +13,7 @@
   {
     "id": "Parvaz-E_Khiyal",
     "title": "Parvaz-e Khiyal (2025-05-11)",
+    "poster": "./assets/video/Parvaz-E_Khiyal.jpg",
     "videoID": "Gxp9wjiAZFE",
     "text": "<div><p>I denna konsert framfördes andlig och traditionell musik med fokus på tanbur och slagverk. Huvudstycket var maqam-e \"Tarz\", tillsammans med berättelser från Yarsan-tron. Det förklarades att enligt Yarsan-tron blåste Gud in själen i kroppen genom tanburens ljud. Konserten var en symbol för <strong>friheten att sjunga och spela</strong>, samt ett ställningstagande för <strong>kvinnors rättigheter</strong> inom musik och konst.  </p>    <p><strong>Varför konserten är viktig för asylärendet:</strong><br>  <strong>Yarsan-musik är förbjuden i Iran.</strong><br>  Att framföra Yarsan-musik eller uttrycka dess religiösa innehåll är starkt förtryckt i Iran. En återvändo skulle innebära allvarliga risker för mig och min familj.  </p>  <p><strong>Stöd för konstnärlig yttrandefrihet:</strong><br>  Denna konsert är en del av mitt öppna stöd för <strong>yttrandefrihet och kvinnors rättigheter</strong>. Sådana offentliga uttryck är förbjudna i Iran, vilket gör att vi riskerar repressalier vid återvändo.  </p>  <p><strong>Kulturfrämjande och kamp för frihet:</strong><br>  Konserten hade ett tydligt budskap om <strong>konstnärlig frihet och kvinnors rätt till att uppträda</strong>. Att försvara kvinnors och minoriteters rättigheter i ett offentligt sammanhang innebär stor fara i Iran.  </p></div>",
     "source": {
@@ -27,7 +28,6 @@
       "./assets/picture/GudsSjuNamn.jpg"
     ],
     "video": null,
-    "poster": null,
     "text": "Ett musikverk skapades där jag stod för tanburspel och melodiskapande. Verket är baserat på en dikt av den indiske tänkaren Meher Baba om Guds sju namn och framfördes med sång av Frimaher. Videon av detta verk fick över 70 000 visningar på Instagram och fick stor uppmärksamhet. Att framföra detta verk i Iran var omöjligt och skulle ha inneburit allvarliga risker för mig – både på grund av förbudet mot kvinnlig sång och det tydliga budskapet om yttrandefrihet och respekt för alla religioner som syns i videon. ",
     "source": {
       "label": "www.instagram.com",
@@ -37,6 +37,7 @@
   {
     "id": "NimaSarvestani",
     "title": "Privat musikframträdande i en krets av motståndare till Islamiska republiken Iran (2024-12-22)",
+    "poster": "./assets/video/NimaSarvestani.jpg",
     "img": null,
     "videoID": "d0pFnWyig10",
     "text": "<p>  Jag och min dotter, <strong>Kimia Kianian</strong>, blev inbjudna av <strong>Nima Sarvestani</strong>, en välkänd dokumentärfilmare och stark motståndare till den iranska regimen, till en <strong>privat sammankomst i hans hem</strong>.<br>  Sarvestani är regissören bakom dokumentären om <strong>rättegången mot Hamid Nouri</strong>, en representant för det iranska regimens brott.<br>  Vid sammankomsten deltog även <strong>Masoud Rayegan</strong>, en välkänd iransk skådespelare och regimkritiker.</p><p>  Jag och min dotter framförde musik med <strong>teman om frihet, fred och rättvisa</strong>, inspirerad av Yarsan-kulturens traditioner. Evenemanget hade en tydlig <strong>kritisk hållning mot den iranska regimen</strong>.</p><p>  ✅ Vår närvaro och vårt framträdande i ett sådant sammanhang kan av Islamiska republiken betraktas som <strong>regimkritisk aktivitet</strong> och innebär en <strong>allvarlig risk för mig och min dotter vid en eventuell återvändo till Iran</strong>, inklusive hot om gripande, förhör och förbud mot fortsatt konstnärlig verksamhet.</p>",
@@ -49,7 +50,7 @@
     "id": "eurokurd2024",
     "title": "Euro kurd (2024-12-20)",
     "img": null,
-    "poster": "./assets/picture/eurokurd2024.jpg",
+    "poster": "./assets/video/eurokurd2024.jpg",
     "videoID": "q999bCIQ_3E",
     "text": "Samarbete mellan Balushan-gruppen, som jag själv leder, och Yarsan.",
     "source": {
@@ -60,11 +61,11 @@
   {
     "id": "KurdiskaKulturFestivalen2024",
     "title": "Kurdiska Kultur Festivalen (2024-09-01)",
+    "poster": "./assets/video/Exilkonserter2024_1.jpg",
     "img": [
       "./assets/picture/Exilkonserter2024_1.jpg"
     ],
     "video": "./assets/video/KurdiskaKulturFestivalen2024.mp4",
-    "poster": "./assets/video/KurdiskaKulturFestivalen2024.jpg",
     "text": "Exilkonserter – Jag och Yaran-gruppen har alltid, trots de risker det innebär för mig, stått med musikens röst för kvinnors frihet och kampen mot förtrycket av kvinnors röster i Iran.",
     "source": null
   },
@@ -94,6 +95,7 @@
   {
     "id": "shokobanHelsingfors2023",
     "title": "'Shkobān' i Helsingfors (2023-04-22)",
+    "poster": "./assets/picture/shokobanHelsingfors2023.jpg",
     "img": [
       "./assets/picture/shokobanHelsingfors2023.jpg"
     ],
@@ -107,8 +109,8 @@
   {
     "id": "shokobanOslo2023",
     "title": "'Shkobān' i Oslo (2023-04-15)",
+    "poster": "./assets/video/shokobanOslo2023.jpg",
     "videoID": "PCevAW-VT8U",
-    "poster": null,
     "text": "Som musikledare och kompositör genomförde jag konserter i Norge (15.4.2023). Dessa framträdanden hölls till stöd för rörelsen Kvinna, Liv, Frihet och i protest mot förtrycket av konstnärer samt för att sprida iransk protestmusik.",
     "source": {
       "label": "www.youtube.com",
@@ -118,6 +120,7 @@
   {
     "id": "minneAvJina_1",
     "title": "Minne av Jina Stockholm 1 (2023-04-08)",
+    "poster": "./assets/video/minneAvJina_1.jpg",
     "img": null,
     "videoID": "pMnoTgFbVrA",
     "text": "Några månader efter Jina-revolutionen skapade jag tillsammans med min musikgrupp ett musikstycke till minne av Jina, med ett budskap om frihet, protest och motstånd. Vi framförde detta verk under en turné i flera europeiska städer, inklusive Rotterdam, Bryssel, Frankfurt, Stockholm, Karlstad, Oslo och Helsingfors. Syftet var att förmedla revolutionens och frihetens röst till världen genom musik. Konserterna möttes av ett mycket starkt mottagande. I Frankfurt deltog omkring 5000 personer, och i övriga städer var salarna helt fullsatta.\n<p>Lull lull, du dör aldrig, kära Jina.</p>\n<p>Din resning är högre än Himalaya, och ditt hår är frihetens sol.</p>\n<p>När du öppnar dina ögon, är det ett hopp för våra trädgårdar och vårt land.</p>\n<p>Jag klagar inte för dig, du regnbågsvingade ängel – jag gråter inte för din gyllene gränd.</p>\n<p>Lull lull, du dör inte, Jina.</p>\n<p>Stolta drottning av staden Saqqez – vi är stolta att världen har fäst blicken vid dig.</p>\n<p>Ditt hår dansar som en frihetsdans, blodet från hundratals martyrer är en gåva till dig.</p>\n<p>Din oskuld är som en eldslåga och en virvelvind, och som fjärilens själ från din känsliga kropp –</p>\n<p>flyger i Teherans obarmhärtiga himmel, mot en jord fylld med sorg och skolbarnens blod.</p>\n<p>Lull lull, du dör inte, Jina.</p>\n<p>Det svarta molnet på den dimmiga himlen tillåter inte solens ljus att nå fångarnas och de förtrycktas hem.</p>\n<p>Kära, säg med stolthet: ”Jag är ära, likt solen.”</p>\n<p>Och mitt lands flaggor ska aldrig slockna i skymningens mörka moln.</p>\n<p>Med soluppgångens ljus ska jag lysa upp fosterlandets stolta toppar.</p>\n<p>Jag har offrat blod för att hålla folkets stolthets träd levande.</p>\n<p>Dess vackra resning ska vara som judasträdet, med röda blommor i blom.</p>\n<p>Jag var en fjäril kring frihetens låga – för kärleken till friheten har mina vingar bränts.</p>\n<p>Lågan är helig – låt mig brinna.</p>\n<p>Gråt inte, mor, för mitt lidande och mina rop.</p>\n<p>Jag har offrat blod för att hålla folkets stolthets träd levande.</p>\n<p>Dess vackra resning ska vara som judasträdet, med röda blommor i blom.</p>\n<p><strong>– Sharow Kermashani</strong></p>\n",
@@ -129,19 +132,19 @@
   {
     "id": "minneAvJina_2",
     "title": "Minne av Jina Stockholm 2 (2023-04-08)",
-    "img": null,
-    "videoID": null,
     "poster": "./assets/video/minneAvJina_2.jpg",
-    "video": "./assets/video/minneAvJina_2.mp4",
+    "img": null,
+    "videoID": "6QtDSED0WiU",
     "text": "<p>\n  Detta musikstycke framfördes av mig och min musikgrupp under vår Europaturné, några månader efter Jina-revolutionen. Verket är baserat på en gammal och profetisk dikt av Shah Khoshin, en andlig ledare inom Yarsan-tron, och har återtolkats med tanke på dagens situation i Iran. Texterna uttrycker tydligt folkets uppror, regimens förtryck, religiös diskriminering och hopp om frihet och rättvisa. Med denna musik har vi inte bara uttryckt vår kulturella och religiösa identitet, utan också gjort en tydlig politisk markering mot diktatur och religiös förföljelse. Detta är både en andlig handling och en fredlig protest – ett sätt att stå upp för vår tro och visa stöd för det iranska folkets kamp.\n</p>\n\n<p>\n  Hela Iran är omgivet av sorg, och de kloka vet detta.<br>\n  Landets alla hörn är fyllda av sorg som drabbar alla.<br>\n  Folket har rest sig, och i städerna råder uppror.<br>\n  Detta har en vis man, Shah Khoshin, sagt.<br>\n  I denna tid, när ingenting är gott,<br>\n  är bergen fyllda av ormar och slätterna av ryttare.<br>\n  Vi kan luta oss mot ormarna, men aldrig mot ryttarna och spjutbärarna.<br>\n  För oss är ormens gift bättre än spjutens hot.<br>\n  Vi är beredda att söka skydd hos ormen, men aldrig ge vår heder åt dem.<br>\n  Från Sham till Aleppo, och från Balkh till Bukhara råder uppror.<br>\n  Även kring Kina och västerländska länder finns oro.<br>\n  Överallt ljuder krigets horn.<br>\n  I Iran dödas tusentals unga,<br>\n  och i religionens namn spills blod och landet fylls av oro.<br>\n  Till slut måste vi tro: folket kommer att segra<br>\n  och världen kommer att nå fred och ro.<br>\n  <em>Poet: Khan Almas</em>\n</p>\n",
     "source": {
       "label": "Youtube",
-      "url": "https://www.youtube.com/watch?si=Sy3X3hQVJRQMma3K&v=6QtDSED0WiU&feature=youtu.be"
+      "url": "https://www.youtube.com/watch?v=6QtDSED0WiU"
     }
   },
   {
     "id": "minneAvJina_3",
     "title": "Minne av Jina Stockholm 3 (2023-04-08)",
+    "poster": "./assets/video/minneAvJina_3.jpg",
     "img": null,
     "videoID": "RoOkCYRqQP4",
     "text": "Detta musikstycke framfördes av mig och min musikgrupp under vår Europaturné, några månader efter Jina-revolutionen. Verket är baserat på en gammal och profetisk dikt av Shah Khoshin, en andlig ledare inom Yarsan-tron, och har återtolkats med tanke på dagens situation i Iran. Texterna uttrycker tydligt folkets uppror, regimens förtryck, religiös diskriminering och hopp om frihet och rättvisa. Med denna musik har vi inte bara uttryckt vår kulturella och religiösa identitet, utan också gjort en tydlig politisk markering mot diktatur och religiös förföljelse. Detta är både en andlig handling och en fredlig protest – ett sätt att stå upp för vår tro och visa stöd för det iranska folkets kamp.\n<p>Åh hjärta, varför klagar du över denna tidsålder?</p>\n<p>Varför gråter du över dessa svåra dagar?</p>\n<p>Minns du den dagen de band dina händer och fötter?</p>\n<p>Som när de stenade Bagdad.</p>\n<p>Den dagen avrättade de den vise Mansur.</p>\n<p>Mansur avrättades glatt i gryningen för sanningens skull.</p>\n<p>De brände hans kropp och spred askan i havet.</p>\n<p>Från askan på havet hördes sanningens röst.</p>\n<p>Var medvetna: om ni också som Mansur hänger i galgen,</p>\n<p>vet då att ni är levande och odödliga.</p>\n<p><strong>– Sheikh Amir</strong></p>\n",
@@ -153,23 +156,24 @@
   {
     "id": "Frankfurt2023",
     "title": "Konsert i Frankfurt (2023-03-23)",
+    "poster": "./assets/video/Frankfurt2023.jpg",
     "img": null,
-    "videoID": "wOzmVtZcNL_Uvqd1",
+    "videoID": "0ZxbQLRSiIM",
     "video": null,
     "text": "<p>  Den 23 mars 2023 höll jag tillsammans med mitt musikgrupp en stor konsert i <strong>Frankfurt, Tyskland</strong>. Jag var <strong>kompositör och konstnärlig ledare</strong> för programmet.<br>  Konserten hölls utomhus med <strong>över 5 000 deltagare</strong>. Vi framförde stycket <strong>\"Shakouban\"</strong> till minne av <strong>Jina (Mahsa Amini)</strong> och i stöd för <strong>jämställdhet och iranska flickors rättigheter</strong>.<br>  Därefter framförde vi två musikstycken till stöd för <strong>det iranska folkets frihetskamp</strong>.</p><p>  Denna konsert var en del av den revolutionära rörelsen <strong>\"Jin, Jiyan, Azadî\"</strong> (Kvinna, Liv, Frihet) och sändes live via <strong>Arian TV</strong>, en exilkanal som är uttalat kritisk mot den islamiska regimen i Iran.</p><p>  Med denna konsert lyckades vi <strong>föra det iranska folkets protest mot den förtryckande regimen</strong> ut i världen. Det här är ett dokumenterat exempel på <strong>min konstnärliga verksamhet i exil</strong> och mitt engagemang för <strong>konstnärlig frihet, kvinnors rättigheter och yttrandefrihet</strong>.</p>",
     "source": {
       "label": "Youtube",
-      "url": "https://youtu.be/0ZxbQLRSiIM?si=wOzmVtZcNL_Uvqd1"
+      "url": "https://www.youtube.com/watch?v=0ZxbQLRSiIM"
     }
   },
   {
     "id": "goteborg2022",
     "title": "World music festival Göteborg 2022",
+    "poster": "./assets/video/göteborg_2022.jpg",
     "img": [
       "./assets/picture/göteborg_2022.jpg"
     ],
     "videoID": "qg2-AwOsQSA",
-    "poster": null,
     "text": "Den 2 april 2022 skedde ett distansdeltagande i Göteborgs Musikfestival. Framträdandet genomfördes underjordiskt i Iran med sångerskan Nova Piri. Trots restriktioner och risker för kvinnor inom musik i Iran gjordes en insats för att stödja kvinnors röster och skapa konstnärliga möjligheter för dem. Denna konsert var ett uttryck för engagemanget för yttrandefrihet inom musik och stöd för kvinnliga artister, trots systematiska hot och förtryck i Iran.",
     "source": {
       "label": "INSTAGRAM",
@@ -179,6 +183,7 @@
   {
     "id": "goteborg2016",
     "title": "Hyllning till Seyed Khalil Alinejad – Göteborg 2016",
+    "poster": "./assets/video/goteborg2016.jpg",
     "videoID": "zYY-ICwvKHA",
     "text": "Denna ceremoni hölls år 2016 i Göteborg, Sverige, för att hedra Seyed Khalil Alinejad, en framstående artist och en central gestalt inom Yarsan-traditionen. Vid evenemanget uppträdde Malihe Moradi som sångerska, och jag, Keyvan Kianian, medverkade som kompositör och ledare för ensemblen. Framträdandet syftade till att bevara och främja Yarsan-musiken, stödja kvinnors konstnärliga frihet och hedra det kulturella och andliga arvet hos iranier. Dessa evenemang speglar mitt fortsatta konstnärliga och kulturella engagemang i Sverige samt min pågående kamp för yttrandefrihet inom musik och konst.",
     "source": {
@@ -189,6 +194,7 @@
   {
     "id": "Newroz_2016",
     "title": "Inbjudan och medverkan i Newroz TV – September 2016",
+    "poster": "./assets/video/Newroz_2016.jpg",
     "videoID": "4RBSQfi56lg",
     "text": "På inbjudan av Newroz TV i september 2016 deltog jag i ett specialprogram där jag framförde musik och intervjuades om problemen för Yarsan och introduktionen av Yarsans kultur i Iran. Jag har i många år varit förbjuden att vara verksam i Iran, men jag har varje gång riskerat allt och fortsatt min konstnärliga kamp.",
     "source": {
@@ -197,19 +203,21 @@
     }
   },
   {
-    "id": "Avslutningen på konserten 2016",
+    "id": "Avslutningenpåkonserten2016",
     "title": "Avslutningen på konserten 2016 – framträdande med starkt budskap för kvinnors rättigheter",
+    "poster": "./assets/video/Avslutningenpåkonserten2016.jpg",
     "img": null,
     "videoID": "ir6ihjymRQ4",
     "text": "<p>  I slutet av denna konsert, som hölls år <strong>2016 i Stockholm</strong>, introduceras jag, <strong>Keyvan Kianian</strong>, av två kända regimkritiska konstnärer – <strong>Alireza Mojallal</strong> och <strong>Zinat Pirzadeh</strong> – som <strong>en av de mest engagerade aktivisterna i kampen för kvinnors rättigheter</strong> genom konst och musik.</p><p>  🎤 <strong>Sångerskan i konserten var Malih Moradi</strong>, en kvinnlig artist från Iran som sedermera har emigrerat till USA. Hennes närvaro och framträdande tillsammans med vår musikgrupp väckte stor uppmärksamhet bland iranska exilpubliken i Stockholm.</p><p>  🔥 Detta publika erkännande av mitt kulturella och aktivistiska engagemang, särskilt i frågor som rör kvinnors rättigheter och opposition mot den iranska regimen, utgör ytterligare bevis på min utsatthet vid en eventuell återvändo till Iran.</p>",
     "source": {
       "label": "Youtube",
-      "url": "https://www.youtube.com/watch?v=ir6ihjymRQ4&ab_channel=KeyvanKianian"
+      "url": "https://www.youtube.com/watch?v=ir6ihjymRQ4"
     }
   },
   {
     "id": "KonservatorietIGent",
     "title": "Konservatoriet i Gent (2013)",
+    "poster": "./assets/video/KonservatorietIGent.jpg",
     "img": null,
     "videoID": "6lwK3qb5SJk",
     "text": "<p>År <strong>2013</strong> blev jag officiellt inbjuden av <strong>Konservatoriet i Gent, Belgien</strong> som <strong>iransk musiker och instrumentmakare</strong> för att hålla en specialiserad workshop.<br>  Under denna workshop undervisade jag <strong>europeiska musikstudenter i iransk instrumenttillverkning och traditionell iransk musik</strong>.<br>  Denna inbjudan och mitt internationella engagemang visar min betydelse inom iransk traditionell musik och mitt inflytande på en global nivå.</p>",
