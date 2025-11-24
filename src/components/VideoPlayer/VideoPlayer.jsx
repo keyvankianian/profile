@@ -28,6 +28,10 @@ const VideoPlayer = ({ videoID, video, poster, title, language, strings }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+
+          {poster ? (
+            <img className="video-poster-print" src={poster} alt={copy.videoTitle?.(title)} />
+          ) : null}
         </div>
       )}
 
