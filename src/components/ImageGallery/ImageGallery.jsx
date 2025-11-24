@@ -18,6 +18,33 @@ const ImageGallery = ({ images, title, language, strings }) => {
     setActiveIndex(0);
   }, [normalized]);
 
+  useEffect(() => {
+    if (!normalized.length) return undefined;
+
+    const preloaders = normalized.map(
+      (src) =>
+        new Promise((resolve) => {
+          const preloader = new Image();
+          const handleDone = () => resolve();
+
+          preloader.addEventListener('load', handleDone, { once: true });
+          preloader.addEventListener('error', handleDone, { once: true });
+          preloader.src = src;
+        })
+    );
+
+    let cancelled = false;
+    Promise.all(preloaders).then(() => {
+      if (!cancelled) {
+        // no-op: ensure images are requested ahead of print
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [normalized]);
+
   if (!normalized.length) return null;
 
   const activeImage = normalized[Math.min(activeIndex, normalized.length - 1)];

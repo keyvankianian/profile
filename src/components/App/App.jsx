@@ -101,8 +101,32 @@ const App = () => {
   const toggleSidebar = () => setSidebarOpen((prev) => !prev);
   const closeSidebar = () => setSidebarOpen(false);
 
-  const handlePrint = () => {
+  const waitForImagesToLoad = () => {
+    if (typeof document === 'undefined') return Promise.resolve();
+
+    const images = Array.from(document.images || []);
+    const pendingLoads = images
+      .filter((img) => !img.complete || img.naturalWidth === 0)
+      .map((img) =>
+        new Promise((resolve) => {
+          const handleDone = () => {
+            img.removeEventListener('load', handleDone);
+            img.removeEventListener('error', handleDone);
+            resolve();
+          };
+
+          img.addEventListener('load', handleDone, { once: true });
+          img.addEventListener('error', handleDone, { once: true });
+        })
+      );
+
+    if (!pendingLoads.length) return Promise.resolve();
+    return Promise.all(pendingLoads);
+  };
+
+  const handlePrint = async () => {
     if (typeof window === 'undefined') return;
+    await waitForImagesToLoad();
     window.print();
   };
 
