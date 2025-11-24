@@ -85,14 +85,14 @@
     opacity: 1;
     pointer-events: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0.65rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.55rem;
   }
 
   .print-image {
     width: 100%;
     height: auto;
-    max-height: 200px;
+    max-height: 150px;
     border-radius: 0.75rem;
     box-shadow: none;
     object-fit: contain;
