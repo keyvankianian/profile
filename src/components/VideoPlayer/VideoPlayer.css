@@ -122,4 +122,14 @@
     object-fit: cover;
     border-radius: 1rem;
   }
+
+  .video-preview {
+    border: none;
+    box-shadow: none;
+    cursor: default;
+  }
+
+  .video-preview-cta {
+    display: none;
+  }
 }
