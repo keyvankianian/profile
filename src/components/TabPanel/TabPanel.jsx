@@ -18,6 +18,7 @@ const textContent = {
     galleryImageAlt: (title, index) => `${title || 'Gallery'} – bild ${index}`,
     galleryPreviewAlt: (title, index) => `${title || 'Gallery'} – förhandsvisning ${index}`,
     videoTitle: (title) => title || 'Video från YouTube',
+    playVideo: (title) => `Spela ${title || 'videon'}`,
     videoFallback: 'Din webbläsare stödjer inte video-taggen.'
   },
   fa: {
@@ -32,6 +33,7 @@ const textContent = {
     galleryImageAlt: (title, index) => `${title || 'گالری'} – تصویر ${index}`,
     galleryPreviewAlt: (title, index) => `${title || 'گالری'} – پیش‌نمایش ${index}`,
     videoTitle: (title) => title || 'ویدیو از یوتیوب',
+    playVideo: (title) => `پخش ${title || 'ویدیو'}`,
     videoFallback: 'مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.'
   }
 };
